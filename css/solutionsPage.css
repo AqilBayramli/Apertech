@@ -36,7 +36,7 @@ h2{
 
 .solutions__top__text{
 	padding-top: 25px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	color: #000000;
 	font-weight: 600;
 }
@@ -45,9 +45,15 @@ h2{
 	margin-top: 15px;
 }
 
-.solution__box__image>img{
+/* .solution__box__image>img{
 	max-width: 142px;
 	max-height: 142px;
+} */
+
+.solution__box__image>img{
+	width: 142px;
+	height: 142px;
+	object-fit: cover;
 }
 
 .solution__box{
@@ -55,7 +61,7 @@ h2{
 	justify-content: space-between;
     flex-wrap: wrap;
 	/* align-items: center; */
-	padding-top: 70px;
+	padding-top: 60px;
 	padding-bottom: 50px;
 }
 

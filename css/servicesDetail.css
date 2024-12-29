@@ -140,11 +140,11 @@
 	margin-bottom:25px;
 }
 
-.services-detail .inner-box .image-two img{
-	position:relative;
-	width:100%;
-	display:block;
-	max-height: 385px;
+.services-detail .inner-box .image-two img {
+    width: 100%;
+    max-height: 385px;
+    object-fit: cover;
+    display: block;
 }
 
 .services-detail .inner-box p{
