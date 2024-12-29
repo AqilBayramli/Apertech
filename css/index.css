@@ -3,7 +3,7 @@
 
 }
 
-.homepage__clients__content>a>h3{
+.homepage__clients__content>h3{
     text-align: center;
     color: black;
     font-weight: bold;
@@ -14,11 +14,17 @@
     margin-top: 100px;
 }
 
-.homepage__partners__content>a>h3{
+.our_partners_text{
+  display: flex;
+  justify-content: center;
+}
+
+.our_partners_text>a{
     text-align: center;
-    color: black;
     font-weight: bold;
     margin-bottom: 20px;
+    color: black;
+    font-size: 30px;
 }
 
 .all__card__partners{
@@ -463,6 +469,7 @@ color: #2b7bfc !important;
     font-size: 1rem;
     line-height: 1.5;
     color: var(--white);
+    padding-top: 15px;
   }
   
   .sector__card__content {
