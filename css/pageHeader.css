@@ -40,11 +40,16 @@
   --------------------------------------------------------------*/
   #banner__image {
     width: 100%;
-    max-height: 1000px; 
+    height: 1000px; 
     /* background-image: url("../images/banner/New-Cloud-ERP-Deal-desktop-view.jpg"); */
     background-size: contain;
     position: relative;
     background-repeat: no-repeat;
+  }
+
+  #banner__image >img {
+    width: 100%;
+    height: 1000px; 
   }
 
   #banner__image:before {
@@ -554,7 +559,11 @@
   }
 
   #banner__image{
-    max-height: 600px; 
+    height: 600px; 
+  }
+
+  #banner__image >img{
+    height: 600px; 
   }
 }
 
@@ -639,7 +648,11 @@
   }
 
   #banner__image{
-    max-height: 550px; 
+    height: 500px; 
+  }
+
+  #banner__image >img{
+    height: 500px; 
   }
 }
 
@@ -659,7 +672,7 @@
   }
 
   #banner__image{
-    max-height: 500px; 
+    height: 500px; 
   }
 }
 
@@ -715,13 +728,17 @@
 
 @media only screen and (max-width: 900px) {
   #banner__image{
-    max-height: 450px; 
+    height: 450px; 
+  }
+
+  #banner__image >img{
+    height: 450px; 
   }
 }
 
 @media only screen and (max-width: 810px) {
-  #banner__image{
-    max-height: 400px; 
+  #banner__image >img{
+    height: 450px; 
   }
 }
 
@@ -749,13 +766,13 @@
 
 @media only screen and (max-width: 725px) {
   #banner__image{
-    max-height: 360px; 
+    height: 360px; 
   }
 }
 
 @media only screen and (max-width: 650px) {
   #banner__image{
-    max-height: 310px; 
+    height: 310px; 
   }
 }
 
@@ -779,7 +796,7 @@
 
 @media only screen and (max-width: 565px) {
   #banner__image{
-    max-height: 270px; 
+    height: 270px; 
   }
 
   #header__logo>a>img{
@@ -789,7 +806,7 @@
 
 @media only screen and (max-width: 490px) {
   #banner__image{
-    max-height: 230px; 
+    height: 230px; 
   }
 
   #header__logo>a>img{
@@ -813,8 +830,6 @@
   }
 
 
-
-
 @media only screen and (max-width: 420px) {
   #mobile-nav-toggle {
     right: 53px;
@@ -824,8 +839,16 @@
     font-size: 28px;
   }
 
+  .page__header__title >div > img{
+    min-height: 230px;
+  }
+
   #banner__image{
-    max-height: 190px; 
+    height: 250px; 
+  }
+
+  #banner__image >img{
+    height: 250px; 
   }
 
   .learn__btn{
