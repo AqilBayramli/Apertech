@@ -27,19 +27,19 @@ function sendMail() {
     isEmptyField = true;
     if (isEmptyField) {
       if (params.name === "") {
-        document.getElementById("contactName").style.border = "1px solid red";
+        document.getElementById("contactName");
         showError("contactName", "This field is required");
       }
       if (params.email === "") {
-        document.getElementById("contactEmail").style.border = "1px solid red";
+        document.getElementById("contactEmail");
         showError("contactEmail", "This field is required");
       } else if (!isValidEmailWithDomainCheck(params.email)) {
 
-        document.getElementById("contactEmail").style.border = "1px solid red";
+        document.getElementById("contactEmail");
         showError("contactEmail", "Please enter a valid email address");
       }
       if (params.number === "") {
-        document.getElementById("phoneNumber").style.border = "1px solid red";
+        document.getElementById("phoneNumber");
         showError("phoneNumber", "This field is required");
       }else if (!isValidNumber(params.number)) {
         document.getElementById("phoneNumber").style.border = "1px solid red";
@@ -47,15 +47,15 @@ function sendMail() {
       }
 
       if (params.country === "") {
-        document.getElementById("contactCountry").style.border = "1px solid red";
+        document.getElementById("contactCountry");
         showError("contactCountry", "This field is required");
       }
       if (params.companyName === "") {
-        document.getElementById("companyName").style.border = "1px solid red";
+        document.getElementById("companyName");
         showError("companyName", "This field is required");
       }
       if (params.solutions === "") {
-        document.getElementById("companySolutions").style.border = "1px solid red";
+        document.getElementById("companySolutions");
         showError("companySolutions", "This field is required");
       }
       // if (params.website === "") {
@@ -63,7 +63,7 @@ function sendMail() {
       //   showError("companyWeb", "This field is required");
       // }
       if (params.message === "") {
-        document.getElementById("msg").style.border = "1px solid red";
+        document.getElementById("msg");
         showError("msg", "This field is required");
       }
 
