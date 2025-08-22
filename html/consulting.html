@@ -48,12 +48,12 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 ></script>
 <script type="text/javascript">
 (function () {
-  emailjs.init("xhe7fTO5tKJhwRCdo");
+  emailjs.init("RRrlQr2ecgQjf1MGH");
 })();
 </script>
 </head>
 
-<body class="hidden-bar-wrapper aaxax">
+<body class="hidden-bar-wrapper">
     <div class="page-wrapper">
             <!-- Preloader -->
     <div class="preloader"></div>
@@ -108,49 +108,53 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 		<!-- style="background-image: url(images/free-consulting/top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg)" -->
 		<div class="image-layer" ></div>
 		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title light centered">
+	
+			<div class="container_email">
 				<h2 class="form__title">Join Us To Get ERP Free <br> Consultations</h2>
-			</div>
-			<div class="container2">
-				<h2>Join Us To Get ERP Free <br> Consultations</h2>
 		
 				<form>
-				  
+				  <div class="email_input">
+
 				  <div class="group">      
 					<input id="contactName" type="text" name="username" required>
 					<span class="highlight"></span>
 					<span class="bar"></span>
 					<label>Name *</label>
 				  </div>
-					
+				
 				  <div class="group">      
-					<input id="contactEmail" type="email" name="email" required>
+					  <input id="contactEmail" type="email" name="email" required>
 					<span class="highlight"></span>
 					<span class="bar"></span>
 					<label>Email *</label>
 				  </div>
+				</div>
 
-				  <div class="group">      
-					<input id="phoneNumber" type="tel" name="num" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Phone Number *</label>
-				  </div>
+				<div class="email_input">
 
-				  <div class="group">      
-					<input id="companyWeb" type="text" name="site" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Website</label>
-				  </div>
+					<div class="group">      
+						<input id="phoneNumber" type="tel" name="num" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Phone Number *</label>
+					</div>
+					
+					<div class="group">      
+						<input id="companyName" type="text" name="compName" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Company Name *</label>
+					  </div>
+				</div>
 
-				  <div class="group">      
-					<input id="companyName" type="text" name="compName" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Company Name *</label>
-				  </div>
+				<div class="email_input">
+
+					<div class="group">      
+						<input id="companyWeb" type="text" name="site" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Website</label>
+					</div>
 
 				  <div class="group">      
 					<select name="Country" id="contactCountry" required>
@@ -391,8 +395,11 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 					<span class="bar"></span>
 					<label>Country *</label>
 				  </div>
+				</div>
 
-				  <div class="group">      
+				<div class="email_input">
+				 
+					<div class="group">      
 					<select name="line" id="companySolutions" type="text" required>
 						<option value="" disabled selected hidden>Business Line</option>
 						<option value="Aerospace and Defense">Aerospace and Defense</option>
@@ -414,13 +421,15 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 					<span class="bar"></span>
 					<label>Business Line *</label>
 				  </div>
-
 				  <div class="group">      
 					<textarea id="msg" name="message" required></textarea>
 					<span class="highlight"></span>
 					<span class="bar"></span>
 					<label>Message *</label>
 				  </div>
+				  
+				</div>
+
 				  <div class="col-lg-12 col-md-12 col-sm-12 form-group">
 					<button onclick="sendMail()" type="button" class="service__btn">
 						<div class="svg-wrapper-1">

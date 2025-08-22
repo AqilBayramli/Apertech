@@ -1,10 +1,14 @@
-* { box-sizing:border-box; }
+.email_input {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
 
 /* basic stylings ------------------------------------------ */
 	 
-.container2 		{ 
+.container_email 		{ 
   font-family:'Roboto';
-  width:600px; 
+  width:700px; 
   margin:30px auto 0; 
   display:block; 
   background:#FFF;
@@ -16,15 +20,15 @@ h2 		 {
 }
 h2 small { 
   font-weight:normal; 
-  color:#888; 
+  color:#999; 
   display:block; 
 }
 /* form starting stylings ------------------------------- */
-.group 			  { 
+.group { 
   position:relative; 
   margin-bottom:45px; 
 }
-input, select, textarea 				{
+input, select, textarea {
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -36,6 +40,9 @@ input, select, textarea 				{
   -moz-appearance:none;
   appearance:none;
   cursor: pointer;
+}
+textarea {
+  height:49px;
 }
 input:focus, select:focus, textarea:focus 		{ outline:none; }
 
@@ -55,6 +62,26 @@ label 				 {
 
 /* active state */
 input:focus ~ label, input:valid ~ label, select:focus ~ label, select:valid ~ label, textarea:focus ~ label, textarea:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* Ensure floating labels also work when inputs/selects are wrapped (e.g., clear button wrapper) */
+.select-clear-wrapper:focus-within ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* Class-based states applied via JS to handle non-sibling wrappers and selected values */
+.group.has-value label {
+  top:-20px;
+  font-size:14px;
+  color:#999;
+}
+
+.group.is-focused label {
   top:-20px;
   font-size:14px;
   color:#5264AE;
@@ -85,6 +112,11 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, select:focus ~ .bar:before,
   width:50%;
 }
 
+/* Bar animation when group is focused (works even if input/select is wrapped) */
+.group.is-focused .bar:before, .group.is-focused .bar:after {
+  width:50%;
+}
+
 /* HIGHLIGHTER ================================== */
 .highlight {
   position:absolute;
@@ -98,6 +130,13 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, select:focus ~ .bar:before,
 
 /* active state */
 input:focus ~ .highlight, select:focus ~ .highlight, textarea:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* Highlighter animation on focus via class */
+.group.is-focused .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
   -moz-animation:inputHighlighter 0.3s ease;
   animation:inputHighlighter 0.3s ease;
@@ -465,6 +504,12 @@ button {
 	  transform: translateY(-0.1em);
 	}
   }
+
+/* Center the specific send button inside the form */
+.service__btn{
+	margin-left: auto;
+	margin-right: auto;
+}
   
 .services__box__icon{
 	width: 75px;

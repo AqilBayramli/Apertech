@@ -331,3 +331,67 @@ button span {
 		top: 14px !important;
 	  }
   }
+
+/* Inline clear (X) button for select inputs */
+.select-clear-wrapper{
+	position: relative;
+	display: inline-block;
+}
+
+.select-clear-wrapper input,
+.select-clear-wrapper select,
+.select-clear-wrapper textarea{
+	padding-right: 2.2rem; /* space for clear button */
+}
+
+/* Chevron indicator for select fields */
+.select-clear-wrapper.has-select::after{ display: none; }
+
+.select-clear-wrapper.has-select select{
+	padding-right: 3rem; /* space for chevron + clear */
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%239aa0a6' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+	background-repeat: no-repeat;
+	background-position: right 36px center; /* fixed position */
+	background-size: 10px 6px;
+}
+
+.clear-select-btn{
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	border: 0;
+	color: #80868b;
+	font-size: 16px;
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 2;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.clear-select-btn:focus{
+	outline: none;
+}
+
+.clear-select-btn.visible{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.clear-select-btn.visible:hover{
+	background: rgba(0,0,0,0.06);
+	color: #5f6368;
+}
+
+.clear-select-btn.visible:active{
+	background: rgba(0,0,0,0.12);
+}

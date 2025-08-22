@@ -10,7 +10,7 @@ function sendMail() {
     website: document.getElementById("companyWeb").value,
   };
 
-  const serviceID = "service_hxd7j0a";
+  const serviceID = "service_mjgev2b";
   const templateID = "template_suotqjf";
 
   let isEmptyField = false;
@@ -42,7 +42,7 @@ function sendMail() {
         document.getElementById("phoneNumber");
         showError("phoneNumber", "This field is required");
       }else if (!isValidNumber(params.number)) {
-        document.getElementById("phoneNumber").style.border = "1px solid red";
+        document.getElementById("phoneNumber");
         showError("phoneNumber", "Please enter a valid phone number (0-9; min 9 - max 14 digits)");
       }
 
@@ -206,3 +206,128 @@ function validateTextarea() {
     textarea.setCustomValidity('');
   }
 }
+
+// Inline clear (X) buttons for inputs and selects
+(function () {
+  function attachClearButton(fieldElement) {
+    if (!fieldElement || fieldElement.dataset.clearableAttached === 'true') return;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'select-clear-wrapper';
+    if (fieldElement.tagName === 'SELECT') {
+      wrapper.classList.add('has-select');
+    }
+
+    const parent = fieldElement.parentNode;
+    if (!parent) return;
+
+    parent.insertBefore(wrapper, fieldElement);
+    wrapper.appendChild(fieldElement);
+
+    const clearBtn = document.createElement('button');
+    clearBtn.type = 'button';
+    clearBtn.className = 'clear-select-btn';
+    clearBtn.setAttribute('aria-label', 'Clear');
+    clearBtn.setAttribute('title', 'Clear');
+    clearBtn.innerHTML = '&times;';
+    wrapper.appendChild(clearBtn);
+
+    function hasValue() {
+      if (fieldElement.tagName === 'SELECT') {
+        return fieldElement.value !== '' && fieldElement.value != null;
+      }
+      return fieldElement.value && fieldElement.value.length > 0;
+    }
+
+    function updateVisibility() {
+      if (hasValue()) {
+        clearBtn.classList.add('visible');
+      } else {
+        clearBtn.classList.remove('visible');
+      }
+    }
+
+    clearBtn.addEventListener('click', function (event) {
+      event.preventDefault();
+      if (fieldElement.tagName === 'SELECT') {
+        // Prefer selecting an explicit empty-value option if present
+        var emptyOption = Array.prototype.find.call(fieldElement.options || [], function (opt) { return opt.value === ''; });
+        if (emptyOption) {
+          fieldElement.value = '';
+        } else if (typeof fieldElement.selectedIndex === 'number') {
+          // Fallback to first option
+          fieldElement.selectedIndex = 0;
+        }
+        fieldElement.dispatchEvent(new Event('change', { bubbles: true }));
+      } else {
+        fieldElement.value = '';
+        fieldElement.dispatchEvent(new Event('input', { bubbles: true }));
+        fieldElement.focus();
+      }
+      updateVisibility();
+    });
+
+    if (fieldElement.tagName === 'SELECT') {
+      fieldElement.addEventListener('change', updateVisibility);
+    } else {
+      fieldElement.addEventListener('input', updateVisibility);
+      fieldElement.addEventListener('focus', updateVisibility);
+      fieldElement.addEventListener('blur', updateVisibility);
+    }
+
+    fieldElement.dataset.clearableAttached = 'true';
+    updateVisibility();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initClearButtons);
+  } else {
+    initClearButtons();
+  }
+
+  function initClearButtons() {
+    try {
+      var targets = document.querySelectorAll(
+        'select#contactCountry, select#companySolutions, input#contactName, input#contactEmail, input#phoneNumber, input#companyName, input#companyWeb, textarea#msg'
+      );
+      targets.forEach(function (el) { attachClearButton(el); });
+
+      // Floating label support via class toggles
+      var groups = document.querySelectorAll('.container_email .group');
+      groups.forEach(function (group) {
+        var control = group.querySelector('input, select, textarea');
+        if (!control) return;
+
+        function updateHasValue() {
+          var valuePresent = false;
+          if (control.tagName === 'SELECT') {
+            valuePresent = control.value !== '' && control.value != null;
+          } else if (control.tagName === 'TEXTAREA' || control.tagName === 'INPUT') {
+            valuePresent = !!control.value;
+          }
+          if (valuePresent) {
+            group.classList.add('has-value');
+          } else {
+            group.classList.remove('has-value');
+          }
+        }
+
+        function handleFocus() { group.classList.add('is-focused'); }
+        function handleBlur() { group.classList.remove('is-focused'); updateHasValue(); }
+
+        control.addEventListener('focus', handleFocus);
+        control.addEventListener('blur', handleBlur);
+        if (control.tagName === 'SELECT') {
+          control.addEventListener('change', updateHasValue);
+        } else {
+          control.addEventListener('input', updateHasValue);
+        }
+
+        // Initialize state on load
+        updateHasValue();
+      });
+    } catch (e) {
+      // Fail-safe: do nothing
+    }
+  }
+})();
