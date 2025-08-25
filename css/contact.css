@@ -317,6 +317,14 @@ button span {
 	height: 50px;
 }
 
+.contact__form__section{
+	padding-bottom: 110px
+}
+
+.container_email >form {
+	margin-top: 30px;
+}
+
 
 @media only screen and (max-width: 965px) {
 	#mobile-nav-toggle {
