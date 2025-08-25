@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ERP Image Generator</title>
+    <style>
+        body { margin: 0; padding: 20px; background: #f0f0f0; }
+        canvas { border: 1px solid #ccc; }
+        .controls { margin-bottom: 20px; }
+        button { padding: 10px 20px; margin: 5px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="generateERPImage()">Generate ERP Image</button>
+        <button onclick="downloadImage()">Download JPG</button>
+    </div>
+    <canvas id="erpCanvas" width="1920" height="1080"></canvas>
+
+    <script>
+        function generateERPImage() {
+            const canvas = document.getElementById('erpCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, 1920, 1080);
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, 1920, 1080);
+            gradient.addColorStop(0, '#1e3c72');
+            gradient.addColorStop(1, '#2a5298');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 1920, 1080);
+            
+            // Add abstract geometric shapes
+            ctx.globalAlpha = 0.1;
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(200, 200, 150, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.arc(1720, 300, 100, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.arc(1600, 800, 120, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.arc(300, 900, 80, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.globalAlpha = 1;
+            
+            // Main title
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Enterprise Resource Planning', 960, 100);
+            
+            ctx.font = '24px Arial';
+            ctx.fillStyle = 'rgba(255,255,255,0.8)';
+            ctx.fillText('Integrated Business Solutions', 960, 140);
+            
+            // ERP System Modules
+            drawModule(ctx, 200, 200, 'Finance', '$', '#4CAF50', ['Accounting', 'Budgeting', 'Reporting']);
+            drawModule(ctx, 600, 200, 'Human Resources', '👥', '#2196F3', ['Payroll', 'Recruitment', 'Performance']);
+            drawModule(ctx, 1000, 200, 'Operations', '⚙️', '#FF9800', ['Production', 'Inventory', 'Quality']);
+            drawModule(ctx, 1400, 200, 'Sales & CRM', '📈', '#E91E63', ['Leads', 'Opportunities', 'Analytics']);
+            
+            // Central ERP Hub
+            drawCentralHub(ctx, 800, 500);
+            
+            // Connection lines
+            drawConnections(ctx);
+            
+            // Floating icons
+            drawFloatingIcons(ctx);
+            
+            // Bottom stats
+            drawStats(ctx);
+        }
+        
+        function drawModule(ctx, x, y, title, icon, color, features) {
+            // Module background
+            ctx.fillStyle = 'rgba(255,255,255,0.1)';
+            ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+            ctx.lineWidth = 2;
+            roundRect(ctx, x, y, 300, 200, 15);
+            ctx.fill();
+            ctx.stroke();
+            
+            // Title
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 18px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(title, x + 150, y + 40);
+            
+            // Icon circle
+            ctx.fillStyle = color;
+            ctx.globalAlpha = 0.8;
+            ctx.beginPath();
+            ctx.arc(x + 80, y + 80, 25, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.globalAlpha = 1;
+            
+            // Icon
+            ctx.fillStyle = 'white';
+            ctx.font = '20px Arial';
+            ctx.fillText(icon, x + 80, y + 88);
+            
+            // Features
+            ctx.font = '12px Arial';
+            features.forEach((feature, index) => {
+                ctx.fillText(feature, x + 150, y + 100 + (index * 20));
+            });
+        }
+        
+        function drawCentralHub(ctx, x, y) {
+            // Hub background
+            ctx.fillStyle = 'rgba(255,255,255,0.1)';
+            ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(x + 160, y + 160, 120, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            
+            // Hub text
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('ERP', x + 160, y + 140);
+            
+            ctx.font = '16px Arial';
+            ctx.fillText('SYSTEM', x + 160, y + 165);
+            
+            ctx.font = '12px Arial';
+            ctx.fillText('Integrated', x + 160, y + 185);
+            ctx.fillText('Platform', x + 160, y + 200);
+        }
+        
+        function drawConnections(ctx) {
+            ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            
+            // Finance to ERP
+            ctx.moveTo(350, 300);
+            ctx.lineTo(680, 560);
+            
+            // HR to ERP
+            ctx.moveTo(750, 300);
+            ctx.lineTo(800, 560);
+            
+            // Operations to ERP
+            ctx.moveTo(1150, 300);
+            ctx.lineTo(920, 560);
+            
+            // Sales to ERP
+            ctx.moveTo(1550, 300);
+            ctx.lineTo(1040, 560);
+            
+            ctx.stroke();
+            
+            // Arrow heads
+            ctx.fillStyle = 'rgba(255,255,255,0.6)';
+            drawArrow(ctx, 680, 560, 675, 555, 675, 565);
+            drawArrow(ctx, 800, 560, 795, 555, 795, 565);
+            drawArrow(ctx, 920, 560, 915, 555, 915, 565);
+            drawArrow(ctx, 1040, 560, 1035, 555, 1035, 565);
+        }
+        
+        function drawArrow(ctx, x, y, x1, y1, x2, y2) {
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.closePath();
+            ctx.fill();
+        }
+        
+        function drawFloatingIcons(ctx) {
+            const icons = [
+                {x: 200, y: 600, icon: '📊', color: '#9C27B0'},
+                {x: 1720, y: 600, icon: '🔗', color: '#00BCD4'},
+                {x: 200, y: 800, icon: '📱', color: '#FF5722'},
+                {x: 1720, y: 800, icon: '☁️', color: '#8BC34A'}
+            ];
+            
+            ctx.globalAlpha = 0.7;
+            icons.forEach(item => {
+                ctx.fillStyle = item.color;
+                ctx.beginPath();
+                ctx.arc(item.x, item.y, 20, 0, 2 * Math.PI);
+                ctx.fill();
+                
+                ctx.fillStyle = 'white';
+                ctx.font = '16px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText(item.icon, item.x, item.y + 8);
+            });
+            ctx.globalAlpha = 1;
+        }
+        
+        function drawStats(ctx) {
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 36px Arial';
+            ctx.textAlign = 'center';
+            
+            ctx.fillText('100+', 960, 900);
+            ctx.font = '16px Arial';
+            ctx.fillStyle = 'rgba(255,255,255,0.8)';
+            ctx.fillText('Professional Engineers', 960, 925);
+            
+            ctx.font = 'bold 36px Arial';
+            ctx.fillStyle = 'white';
+            ctx.fillText('10+', 660, 900);
+            ctx.font = '16px Arial';
+            ctx.fillStyle = 'rgba(255,255,255,0.8)';
+            ctx.fillText('Years Experience', 660, 925);
+            
+            ctx.font = 'bold 36px Arial';
+            ctx.fillStyle = 'white';
+            ctx.fillText('500+', 1260, 900);
+            ctx.font = '16px Arial';
+            ctx.fillStyle = 'rgba(255,255,255,0.8)';
+            ctx.fillText('Projects Delivered', 1260, 925);
+        }
+        
+        function roundRect(ctx, x, y, width, height, radius) {
+            ctx.beginPath();
+            ctx.moveTo(x + radius, y);
+            ctx.lineTo(x + width - radius, y);
+            ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+            ctx.lineTo(x + width, y + height - radius);
+            ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+            ctx.lineTo(x + radius, y + height);
+            ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+            ctx.lineTo(x, y + radius);
+            ctx.quadraticCurveTo(x, y, x + radius, y);
+            ctx.closePath();
+        }
+        
+        function downloadImage() {
+            const canvas = document.getElementById('erpCanvas');
+            const link = document.createElement('a');
+            link.download = 'erp-modern.jpg';
+            link.href = canvas.toDataURL('image/jpeg', 0.9);
+            link.click();
+        }
+        
+        // Generate image on page load
+        window.onload = function() {
+            generateERPImage();
+        };
+    </script>
+</body>
+</html>
