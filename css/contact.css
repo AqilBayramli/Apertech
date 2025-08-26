@@ -664,3 +664,21 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, select:focus ~ .bar:before,
 	margin-left: 100px;
 	display: block;
 }
+
+
+@media only screen and (max-width: 435px) {
+	.appointment-section .form-column .inner-column{
+		padding-top: 50px;
+	}
+
+	.appointment-section .image-layer{
+		height:470px;
+	}
+	  }
+
+	  
+@media only screen and (max-width: 360px) {
+	.appointment-section .image-layer{
+		height:400px;
+	}
+	  }
