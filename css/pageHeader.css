@@ -21,11 +21,15 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      position: relative;
     }
   
     #header #header__logo {
-      float: left;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
   #header.header-fixed {
@@ -177,6 +181,11 @@
     gap:70px;
     align-items: center;
     /* float: right; */
+  }
+
+  /* Hide the Free Consulting button */
+  #nav-menu-container .btn-box {
+    display: none;
   }
   
   /* Nav Menu Styling */
