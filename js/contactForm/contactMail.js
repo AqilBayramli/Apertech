@@ -293,7 +293,8 @@ function validateTextarea() {
       targets.forEach(function (el) { attachClearButton(el); });
 
       // Floating label support via class toggles
-      var groups = document.querySelectorAll('.container_email .group');
+      // Target groups inside the contact page form so floating labels work even after wrapping inputs
+      var groups = document.querySelectorAll('.appointment-form .group');
       groups.forEach(function (group) {
         var control = group.querySelector('input, select, textarea');
         if (!control) return;
