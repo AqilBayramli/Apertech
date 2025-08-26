@@ -247,8 +247,10 @@ function validateTextarea() {
       }
     }
 
-    clearBtn.addEventListener('click', function (event) {
+    function clearField(event) {
       event.preventDefault();
+      event.stopPropagation();
+      
       if (fieldElement.tagName === 'SELECT') {
         // Prefer selecting an explicit empty-value option if present
         var emptyOption = Array.prototype.find.call(fieldElement.options || [], function (opt) { return opt.value === ''; });
@@ -265,7 +267,14 @@ function validateTextarea() {
         fieldElement.focus();
       }
       updateVisibility();
-    });
+      
+      // Remove any error messages when clearing
+      const fieldId = fieldElement.id;
+      removeError(fieldId);
+    }
+    
+    clearBtn.addEventListener('click', clearField);
+    clearBtn.addEventListener('touchend', clearField);
 
     if (fieldElement.tagName === 'SELECT') {
       fieldElement.addEventListener('change', updateVisibility);
