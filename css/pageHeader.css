@@ -592,11 +592,6 @@
     max-width:72%;
   }
 
-  .btn-style-one{
-    font-size: 13px;
-    padding: 8px 12px;
-  }
-
   .nav-menu a {
     padding: 0 5px 10px 0px;
   }
@@ -655,11 +650,6 @@
     font-size: 14px;
   }
 
-  .btn-style-one{
-    font-size: 14px;
-    padding: 6px 5px;
-  }
-
   #banner__image h1 {
     font-size: 31px;
   }
@@ -683,11 +673,6 @@
 
   #nav-menu-container {
     gap:5px;
-  }
-
-  .btn-style-one{
-    font-size: 13px;
-    padding: 6px 5px;
   }
 
   #banner__image{
@@ -724,11 +709,6 @@
     font-size: 14px !important;
   }
 
-  .btn-style-one{
-    margin-top: 10px;
-    margin-left: 15px;
-    padding: 8px 12px;
-  }
 
   .learn__btn{
 	font-size: 13px;
