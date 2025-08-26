@@ -144,6 +144,10 @@
 
 ***/
 
+.form-group{
+	margin-bottom: 10px!important;
+}
+
 .contact-form{
 	position:relative;
 }
@@ -442,8 +446,8 @@ button span {
 	content:'';
 	left:280px;
 	top:20px;
-	right:50px;
-	bottom:15px;
+	right:150px;
+	bottom:40px;
 	border-radius:10px;
 	background-color:#ffffff;
 	box-shadow:0px 0px 15px rgba(0,0,0,0.15);
@@ -455,9 +459,7 @@ button span {
 
 .appointment-section .form-column .inner-column{
 	position:relative;
-	padding-right:45px;
 	padding-top:0px;
-	padding-left:20px;
 }
 
 .appointment-section .form-column h4{
@@ -648,3 +650,17 @@ input:focus ~ .bar:before, input:focus ~ .bar:after, select:focus ~ .bar:before,
   }
 
 /***
+
+====================================================================
+	Contact Page Image Size Reduction
+====================================================================
+
+***/
+
+/* Reduce the size of the communication concept image */
+.appointment-section .image-column .image img {
+	max-width: 75%;
+	height: auto;
+	margin-left: 100px;
+	display: block;
+}
