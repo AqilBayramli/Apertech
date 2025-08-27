@@ -190,7 +190,7 @@
 
   /* Hide the Free Consulting button */
   #nav-menu-container .btn-box {
-    display: none;
+    display: none !important;
   }
   
   /* Nav Menu Styling */
