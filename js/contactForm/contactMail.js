@@ -10,8 +10,8 @@ function sendMail() {
     website: document.getElementById("companyWeb").value,
   };
 
-  const serviceID = "service_mjgev2b";
-  const templateID = "template_suotqjf";
+  const serviceID = "service_8kecrpe";
+  const templateID = "template_mfywhcd";
 
   let isEmptyField = false;
 
@@ -83,6 +83,7 @@ function sendMail() {
     emailjs
       .send(serviceID, templateID, params)
       .then((res) => {
+        // Clear all form fields
         document.getElementById("contactName").value = "";
         document.getElementById("contactEmail").value = "";
         document.getElementById("msg").value = "";
@@ -91,6 +92,9 @@ function sendMail() {
         document.getElementById("companyName").value = "";
         document.getElementById("companySolutions").value = "";
         document.getElementById("companyWeb").value = "";
+
+        // Reset floating label states to placeholder position
+        resetFloatingLabels();
 
         showSuccessBanner();
 
@@ -109,6 +113,24 @@ function showSuccessBanner(params) {
       successBanner.style.display="none";
     }, 5000);
   }
+}
+
+// Function to reset floating labels to placeholder position
+function resetFloatingLabels() {
+  // Get all form groups
+  const groups = document.querySelectorAll('.appointment-form .group');
+  
+  groups.forEach(function(group) {
+    // Remove the has-value class to reset label position
+    group.classList.remove('has-value');
+    group.classList.remove('is-focused');
+  });
+
+  // Hide all clear buttons (X icons)
+  const clearButtons = document.querySelectorAll('.clear-select-btn');
+  clearButtons.forEach(function(button) {
+    button.classList.remove('visible');
+  });
 }
 
 // Function to revert the border color and remove error message when clicked
