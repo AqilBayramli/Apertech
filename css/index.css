@@ -70,9 +70,8 @@
     font-size: 2.5rem;
     position: relative;
     z-index: 2;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(45deg, #2c3e50, #3498db);
+    background: #141d38;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -87,7 +86,6 @@
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #3498db, #2c3e50);
     border-radius: 2px;
     animation: pulse 2s infinite;
 }
@@ -269,7 +267,8 @@
 
 .swiper-slide {
     transition: transform 0.3s ease;
-    padding: 10px;
+    padding: 3px;
+    margin-bottom: 10px;
 }
 
 /* Enhanced pagination dots */
@@ -631,6 +630,7 @@ color: #2b7bfc !important;
   .title__card{
     margin-top: 50px;
     color: black;
+    font-weight: 700;
   }
 
   .sector__cards{
@@ -933,6 +933,11 @@ color: #2b7bfc !important;
   width: 100%;
 }
 
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 3px !important;
+}
+
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
   .services_card_section {
@@ -1089,9 +1094,9 @@ color: #2b7bfc !important;
 }
 
 @media only screen and (max-width: 600px) {
-    .swiper-slide .clients__box__card {
+    /* .swiper-slide .clients__box__card {
         margin-left: 60px;
-    }
+    } */
     
     .homepage__clients__content>h3 {
         font-size: 1.8rem;
@@ -1104,6 +1109,7 @@ color: #2b7bfc !important;
       max-width: 26rem;
       height: 21rem;
     }
+ 
 }
 
 @media only screen and (max-width: 425px) {
@@ -1116,7 +1122,7 @@ color: #2b7bfc !important;
   }
   
   .swiper-slide .clients__box__card {
-    margin-left: 20px;
+    margin-left: 37px;
     width: 260px;
     height: 180px;
   }
