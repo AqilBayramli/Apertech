@@ -8,7 +8,7 @@
 
 .sidebar-page-container{
 	position:relative;
-	padding:50px 0px 80px;
+	padding:50px 0px 50px;
 }
 
 .sidebar-page-container .content-side,
@@ -242,11 +242,12 @@
 	position:absolute;
 	left:-2px;
 	top:-2px;
+	bottom:-2px;
 	width:50px;
-	height:50px;
 	color:#0060ff;
-	line-height:50px;
-	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 	border-right:2px solid #e5e7eb;
 	background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 	transition:all 0.3s ease;
@@ -327,7 +328,7 @@
     }
 
 	.sidebar-page-container{
-		padding:20px 0px 80px;
+		padding:20px 0px 0px;
 	}
 }
 
