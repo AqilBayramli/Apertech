@@ -33,7 +33,7 @@ h2 small {
 
 .services-page-section{
 	position:relative;
-	padding:80px 0px 100px;
+	padding:50px 0px 50px;
 	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
@@ -48,7 +48,7 @@ h2 small {
 	font-weight: 700;
 	font-size: 2.5rem;
 	text-align: center;
-	padding-bottom: 60px;
+	padding-bottom: 45px;
 	margin-bottom: 0;
 	position: relative;
 	letter-spacing: -0.5px;
@@ -226,7 +226,7 @@ h2 small {
 
 @media only screen and (max-width: 767px) {
 	.services-page-section {
-		padding: 50px 0px 70px;
+		padding:20px 0px 30px;
 	}
 	
 	.boxes__title__text {
