@@ -103,6 +103,46 @@ h6{
 	font-size:18px;
 }
 
+/* Mobile Navigation Toggle - Consistent across all pages */
+#mobile-nav-toggle {
+	position: fixed;
+	right: 47px;
+	top: 22px;
+	z-index: 999;
+	border: 0;
+	background: none;
+	font-size: 24px;
+	display: none;
+	transition: all 0.4s;
+	outline: none;
+	cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+	color: #fff;
+}
+
+#mobile-nav-toggle:hover i {
+	color: #1e72fa !important;
+}
+
+/* Mobile Nav Toggle Responsive Adjustments */
+@media only screen and (max-width: 965px) {
+	#mobile-nav-toggle {
+		right: 43px !important;
+		top: 14px !important;
+		display: inline !important;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	#mobile-nav-toggle {
+		right: 33px !important;
+		top: 14px !important;
+		display: inline !important;
+	}
+}
+
 .auto-container{
 	position:static;
 	max-width:70%;

@@ -261,29 +261,7 @@
     margin: 0;
   }
   
-  /* Mobile Nav Toggle */
-  #mobile-nav-toggle {
-    position: fixed;
-    right: 63px;
-    top: 25px;
-    z-index: 999;
-    /* margin: 20px 20px 0 0; */
-    border: 0;
-    background: none;
-    font-size: 24px;
-    display: none;
-    transition: all 0.4s;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  #mobile-nav-toggle i {
-    color: #fff;
-  }
-
-  #mobile-nav-toggle:hover i {
-    color: #1e72fa !important;
-  }
+  /* Mobile Nav Toggle - Styles moved to global style.css for consistency */
   
   .fa-chevron-down:hover {
     color: #1e72fa !important;
@@ -424,9 +402,7 @@
     left: 0;
   }
   
-  body.mobile-nav-active #mobile-nav-toggle {
-    color: #fff;
-  }
+  /* Mobile nav toggle active state handled globally in style.css */
   
   /*--------------------------------------------------------------
   # Sections
@@ -693,9 +669,7 @@
     max-width:87%;
   }
 
-  #mobile-nav-toggle {
-    display: inline;
-  }
+  /* Mobile nav toggle display handled globally in style.css */
 
   #nav-menu-container {
     display: none;
@@ -711,7 +685,7 @@
 
 
   .learn__btn{
-	font-size: 13px;
+	  font-size: 13px;
     padding: 4px 10px !important;
   }
 
@@ -865,9 +839,7 @@
 
 
 @media only screen and (max-width: 420px) {
-  #mobile-nav-toggle {
-    right: 53px;
-  }
+
 
   #header__logo>a>img{
     width: 60px;

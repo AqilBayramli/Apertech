@@ -264,31 +264,31 @@
 	align-items: center;
 }
 
-button span {
+.service__btn span {
 	display: block;
 	margin-left: 0.3em;
 	transition: all 0.3s ease-in-out;
   }
   
-  button i {
+  .service__btn i {
 	display: block;
 	transform-origin: center center;
 	transition: transform 0.3s ease-in-out;
   }
   
-  button:hover .svg-wrapper {
+  .service__btn:hover .svg-wrapper {
 	animation: fly-1 0.6s ease-in-out infinite alternate;
   }
   
-  button:hover i {
+  .service__btn:hover i {
 	transform: translateX(1.2em) rotate(45deg) scale(1.1);
   }
   
-  button:hover span {
+  .service__btn:hover span {
 	transform: translateX(5em);
   }
   
-  button:active {
+  .service__btn:active {
 	transform: scale(0.95);
   }
   
@@ -330,19 +330,7 @@ button span {
 }
 
 
-@media only screen and (max-width: 965px) {
-	#mobile-nav-toggle {
-		right: 43px !important;
-		top: 14px !important;
-	  }
-  }
-
-  @media only screen and (max-width: 620px) {
-	#mobile-nav-toggle {
-		right: 33px !important;
-		top: 14px !important;
-	  }
-  }
+/* Mobile navigation toggle styles are now handled globally in style.css */
 
 /* Inline clear (X) button for select inputs */
 .select-clear-wrapper{
@@ -511,7 +499,7 @@ button span {
 	color: black !important;
 }
 
-button {
+.service__btn {
 	font-family: inherit;
 	font-size: 20px;
 	background-color: #0060ff;
@@ -527,31 +515,31 @@ button {
 	cursor: pointer;
   }
   
-  button span {
+  .service__btn span {
 	display: block;
 	margin-left: 0.3em;
 	transition: all 0.3s ease-in-out;
   }
   
-  button i {
+  .service__btn i {
 	display: block;
 	transform-origin: center center;
 	transition: transform 0.3s ease-in-out;
   }
   
-  button:hover .svg-wrapper {
+  .service__btn:hover .svg-wrapper {
 	animation: fly-1 0.6s ease-in-out infinite alternate;
   }
   
-  button:hover i {
+  .service__btn:hover i {
 	transform: translateX(1.2em) rotate(45deg) scale(1.1);
   }
   
-  button:hover span {
+  .service__btn:hover span {
 	transform: translateX(5em);
   }
   
-  button:active {
+  .service__btn:active {
 	transform: scale(0.95);
   }
   

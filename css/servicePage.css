@@ -450,19 +450,9 @@ h2 small {
 }
 
 @media only screen and (max-width: 965px) {
-	#mobile-nav-toggle {
-		right: 43px !important;
-		top: 14px !important;
-	}
-
 	.inner-container{
 		padding:0px 0px !important;
 	}
 }
 
-@media only screen and (max-width: 620px) {
-	#mobile-nav-toggle {
-		right: 33px !important;
-		top: 14px !important;
-	}
-}
+/* Mobile navigation toggle styles are now handled globally in style.css */
