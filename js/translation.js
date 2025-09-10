@@ -156,7 +156,12 @@ class TranslationSystem {
                 'contact-address': 'Address',
                 'contact-phone': 'Phone',
                 'contact-email': 'E-Mail',
+                'page-title-support': 'APERTECH | Support',
+                'footer-address': 'Baku, 1/25 Ahmad Rajabli, Chinar Park, 2-nd Center, 4 floor',
                 'contact-hesitate-title': 'Do Not Hesitate To Contact Us',
+                'contact-how-can-we-help': 'How Can We Help?',
+                'contact-help-text-1': 'If you need any help, please',
+                'contact-help-text-2': 'feel free to contact us.',
                 'contact-write-title': 'Write Now............',
                 'contact-form-name': 'Name *',
                 'contact-form-email': 'Email *',
@@ -167,7 +172,37 @@ class TranslationSystem {
                 'contact-form-business-line': 'Business Line *',
                 'contact-form-message': 'Message *',
                 'contact-form-send': 'Send',
-                'contact-form-success': 'Your message sent successfully !'
+                'contact-form-success': 'Your message sent successfully !',
+                
+                // Service Detail Pages
+                'service-web-dev-content-1': 'Our web development services are tailored to meet your specific goals and objectives, whether you\'re looking to establish an informative website, launch an e-commerce platform, or build a custom web application.',
+                'service-web-dev-content-2': 'From the moment we engage , we strive to understand your unique business requirements, target audience, and desired outcomes. This enables us to create a strategic plan that aligns with your vision and ensures a seamless development process.',
+                'service-web-dev-content-3': 'Throughout the development process, we emphasize collaboration and transparency. We provide regular updates and encourage your feedback and input, ensuring that the final product meets and exceeds your expectations.',
+                
+                'service-erp-impl-content-1': 'We offer comprehensive ERP implementation services to help you streamline your business processes and unlock new levels of efficiency. With our expertise, we can guide you through every step of the ERP implementation journey, ensuring a smooth transition and maximizing the value of your investment.',
+                'service-erp-impl-content-2': 'We understand that ERP implementation can be a complex endeavor, involving multiple stakeholders and critical business functions. That\'s why we\'ll collaborate closely with your team, ensuring effective communication and fostering a shared understanding of the implementation roadmap. We\'ll guide you through the selection, configuration, and customization of the ERP system, ensuring it meets your unique business needs.',
+                'service-erp-impl-content-3': 'Whether you\'re implementing a new ERP system or upgrading an existing one, we\'ll provide guidance and expertise throughout the entire process.',
+                
+                'service-soft-impl-content-1': 'We are here to assist you in navigating the process of implementing new software or upgrading your existing systems. With our expertise and dedication, we will guide you through every stage of the implementation journey, ensuring a smooth transition and maximizing the benefits of the software for your business.',
+                'service-soft-impl-content-2': 'At Apertech Solutions, we understand that software implementation can be a complex endeavor. That\'s why we take the time to listen to your unique business needs and requirements. Working closely with you, we will develop a customized implementation plan that aligns perfectly with your organization\'s objectives.',
+                'service-soft-impl-content-3': 'Communication plays a crucial role throughout the implementation process. We will provide regular updates on the progress of the project, promptly address any concerns you may have, and provide the necessary support to ensure a seamless implementation experience. Your satisfaction is of utmost importance to us.',
+                'service-soft-impl-content-4': 'Choose Apertech Solutions for your software implementation needs, and together, we will unlock the full potential of the software to transform your business. We are committed to delivering a successful implementation that drives efficiency, productivity, and growth for your organization.',
+                
+                'service-analytics-content-1': 'We offer comprehensive ERP business analytics services to help you harness the power of your data and drive informed decision-making for your organization. With our expertise, we can empower you to unlock valuable insights from your ERP system and optimize your business processes.',
+                'service-analytics-content-2': 'When you choose Apertech for ERP business analytics services, you gain access to a team of skilled professionals who understand the intricacies of ERP systems and their underlying data structures. We\'ll work closely with you to understand your specific business needs and objectives, tailoring our analytics solutions to align with your ERP implementation.',
+                'service-analytics-content-3': 'We\'ll help you identify the key performance indicators (KPIs) that are critical to measuring your business success. Whether it\'s tracking sales performance, inventory levels, or customer satisfaction, we\'ll develop customized analytics frameworks to capture, analyze, and visualize the data in a meaningful way.',
+                'service-analytics-content-4': 'At Apertech Solutions, we understand that data can be complex and overwhelming. That\'s why we focus on delivering actionable insights in a clear and understandable manner. We\'ll collaborate closely with you, providing intuitive data visualizations and reports that enable you to quickly grasp the key insights and take informed actions.',
+                
+                'service-support-content-1': 'Our support team is here to provide you with exceptional support services for all your technology needs. We understand that a smooth-running technology environment is crucial to your business success, and we\'re here to ensure that you have the reliable support you need.',
+                'service-support-content-2': 'We believe in delivering responsive and reliable support services to keep your technology running smoothly. Our team is committed to providing timely assistance, resolving issues efficiently, and minimizing any disruptions to your business operations. We know that your time is valuable, and we strive to get you back up and running as quickly as possible.',
+                'service-support-content-3': 'Our team works diligently to monitor systems, identify potential vulnerabilities, and implement preventive measures to keep your technology infrastructure secure and optimized. We understand that prevention is key to maintaining your business\'s stability and protecting your valuable data.',
+                'service-support-content-4': 'We\'ll listen attentively to your needs and provide straightforward explanations and instructions to help you navigate through any technical challenges. Our goal is to empower you with the knowledge and tools needed to make the most out of your technology.',
+                
+                // ERP Consulting Service Detail Page
+                'service-consulting-content-1': 'At Apertech, ERP consulting services are designed to provide tailored solutions that align with our clients\' unique business needs.',
+                'service-consulting-content-2': 'Our approach begins with a thorough understanding of your organization\'s processes, goals, and challenges. We work closely with key stakeholders to conduct a comprehensive analysis of your existing systems and identify areas where an ERP solution can bring significant improvements.',
+                'service-consulting-content-3': 'Our team of experienced consultants excels in system customization and configuration. We take the time to understand your specific requirements and tailor the ERP system to match your workflows, reporting needs, and industry regulations. Our aim is to ensure a seamless integration of the ERP system into your business environment.',
+                'service-consulting-content-4': 'With ERP consulting services, we strive to empower your business with efficient processes, improved decision-making, and enhanced productivity. Let us be your trusted partner in unlocking the full potential of ERP for your organization.'
             },
             az: {
                 // Navigation
@@ -322,7 +357,12 @@ class TranslationSystem {
                 'contact-address': 'Ünvan',
                 'contact-phone': 'Telefon',
                 'contact-email': 'E-Poçt',
+                'page-title-support': 'APERTECH | Dəstək',
+                'footer-address': 'Bakı, 1/25 Əhməd Rəcəbli, Çinar Park, 2-ci Mərkəz, 4 mərtəbə',
                 'contact-hesitate-title': 'Bizimlə Əlaqə Saxlamaqdan Çəkinməyin',
+                'contact-how-can-we-help': 'Sizə Necə Kömək Edə Bilərik?',
+                'contact-help-text-1': 'Hər hansı köməyə ehtiyacınız varsa, zəhmət olmasa',
+                'contact-help-text-2': 'bizimlə əlaqə saxlamaqdan çəkinməyin.',
                 'contact-write-title': 'İndi Yazın............',
                 'contact-form-name': 'Ad *',
                 'contact-form-email': 'E-Poçt *',
@@ -333,7 +373,37 @@ class TranslationSystem {
                 'contact-form-business-line': 'Biznes Sahəsi *',
                 'contact-form-message': 'Mesaj *',
                 'contact-form-send': 'Göndər',
-                'contact-form-success': 'Mesajınız uğurla göndərildi !'
+                'contact-form-success': 'Mesajınız uğurla göndərildi !',
+                
+                // Service Detail Pages
+                'service-web-dev-content-1': 'Veb inkişaf xidmətlərimiz sizin xüsusi məqsəd və məqsədlərinizə uyğun olaraq hazırlanır, məlumatlı veb sayt yaratmaq, e-ticarət platforması təşkil etmək və ya fərdi veb tətbiqi qurmaq istəyirsinizsə.',
+                'service-web-dev-content-2': 'Əlaqə qurduğumuz andan etibarən sizin unikal biznes tələblərinizi, hədəf auditoriyanızı və istədiyiniz nəticələri başa düşməyə çalışırıq. Bu bizə vizyonunuzla uyğun strategiya planı yaratmağa və səlis inkişaf prosesini təmin etməyə imkan verir.',
+                'service-web-dev-content-3': 'İnkişaf prosesi boyunca əməkdaşlıq və şəffaflığa vurğu edirik. Müntəzəm yeniləmələr təqdim edirik və sizin rəy və girişinizi təşviq edirik, yekun məhsulun gözləntilərinizi qarşılamasını və aşmasını təmin edirik.',
+                
+                'service-erp-impl-content-1': 'Biznes proseslərinizi optimallaşdırmaq və yeni səmərəlilik səviyyələrinə çatmaq üçün hərtərəfli ERP tətbiq xidmətləri təklif edirik. Ekspertizamızla sizi ERP tətbiq səyahətinin hər addımında rəhbərlik edə bilərik, səlis keçidi təmin edərək investisiyanızın dəyərini maksimuma çatdıra bilərik.',
+                'service-erp-impl-content-2': 'ERP tətbiqinin çoxlu paydaşlar və kritik biznes funksiyalarını əhatə edən mürəkkəb iş ola biləcəyini başa düşürük. Buna görə də komandanızla sıx əməkdaşlıq edəcəyik, effektiv ünsiyyəti təmin edərək tətbiq yol xəritəsi haqqında ümumi anlayış yaradacağıq. ERP sisteminin seçimi, konfiqurasiyası və fərdiləşdirilməsi boyunca sizi rəhbərlik edəcəyik, unikal biznes ehtiyaclarınıza cavab verdiyini təmin edəcəyik.',
+                'service-erp-impl-content-3': 'Yeni ERP sistemi tətbiq edirsinizsə və ya mövcud olanı yeniləyirsinizsə, bütün proses boyunca rəhbərlik və ekspertizə təqdim edəcəyik.',
+                
+                'service-soft-impl-content-1': 'Yeni proqram tətbiq etmək və ya mövcud sistemlərinizi yeniləmək prosesində sizə kömək etmək üçün buradayıq. Ekspertizamız və həsr olunmuşluğumuzla sizi tətbiq səyahətinin hər mərhələsində rəhbərlik edəcəyik, səlis keçidi təmin edərək proqramın biznesiniz üçün faydalarını maksimuma çatdıracağıq.',
+                'service-soft-impl-content-2': 'Apertech Həllərində proqram tətbiqinin mürəkkəb iş ola biləcəyini başa düşürük. Buna görə də unikal biznes ehtiyaclarınızı və tələblərinizi dinləmək üçün vaxt ayırırıq. Sizinlə sıx əməkdaşlıq edərək, təşkilatınızın məqsədləri ilə mükəmməl uyğunlaşan fərdi tətbiq planı hazırlayacağıq.',
+                'service-soft-impl-content-3': 'Ünsiyyət tətbiq prosesi boyunca mühüm rol oynayır. Layihənin gedişatı haqqında müntəzəm yeniləmələr təqdim edəcəyik, hər hansı narahatlığınızı dərhal həll edəcəyik və səlis tətbiq təcrübəsini təmin etmək üçün lazımı dəstəyi təqdim edəcəyik. Məmnunluğunuz bizim üçün ən vacibdir.',
+                'service-soft-impl-content-4': 'Proqram tətbiq ehtiyaclarınız üçün Apertech Həllərini seçin və birlikdə proqramın tam potensialını açaraq biznesinizi transformasiya edəcəyik. Səmərəlilik, məhsuldarlıq və təşkilatınız üçün artım yaradan uğurlu tətbiq təqdim etməyə həsr olunmuşuq.',
+                
+                'service-analytics-content-1': 'Məlumatlarınızın gücündən istifadə etmək və təşkilatınız üçün məlumatlı qərarlar qəbul etmək üçün hərtərəfli ERP biznes analitikası xidmətləri təklif edirik. Ekspertizamızla sizi ERP sisteminizdən dəyərli məlumatları açmağa və biznes proseslərinizi optimallaşdırmağa gücləndirə bilərik.',
+                'service-analytics-content-2': 'ERP biznes analitikası xidmətləri üçün Apertech-i seçəndə, ERP sistemlərinin və onların əsas məlumat strukturlarının incəliklərini başa düşən bacarıqlı peşəkarlar komandasına giriş əldə edirsiniz. Xüsusi biznes ehtiyaclarınızı və məqsədlərinizi başa düşmək üçün sizinlə sıx əməkdaşlıq edəcəyik, analitika həllərimizi ERP tətbiqinizlə uyğunlaşdıracağıq.',
+                'service-analytics-content-3': 'Biznes uğurunuzu ölçmək üçün kritik olan əsas performans göstəricilərini (KPI) müəyyən etməkdə kömək edəcəyik. Satış performansını, inventar səviyyələrini və ya müştəri məmnunluğunu izləmək olsun, məlumatları mənalı şəkildə tutmaq, təhlil etmək və vizuallaşdırmaq üçün fərdi analitika çərçivələri hazırlayacağıq.',
+                'service-analytics-content-4': 'Apertech Həllərində məlumatların mürəkkəb və böyük ola biləcəyini başa düşürük. Buna görə də hərəkətə keçirilə bilən məlumatları aydın və başa düşülən şəkildə təqdim etməyə diqqət yetiririk. Sizinlə sıx əməkdaşlıq edəcəyik, əsas məlumatları tez başa düşməyə və məlumatlı hərəkətlər etməyə imkan verən intuitiv məlumat vizuallaşdırmaları və hesabatları təqdim edəcəyik.',
+                
+                'service-support-content-1': 'Dəstək komandamız bütün texnologiya ehtiyaclarınız üçün fərdi dəstək xidmətləri təqdim etmək üçün buradadır. Səlis işləyən texnologiya mühitinin biznes uğurunuz üçün vacib olduğunu başa düşürük və etibarlı dəstəyə ehtiyacınız olduğunu təmin etmək üçün buradayıq.',
+                'service-support-content-2': 'Texnologiyanızın səlis işləməsini təmin etmək üçün cavabverici və etibarlı dəstək xidmətləri təqdim etməyə inanırıq. Komandamız vaxtında kömək təqdim etməyə, məsələləri səmərəli həll etməyə və biznes əməliyyatlarınızda hər hansı pozuntuları minimuma endirməyə həsr olunmuşdur. Vaxtınızın dəyərli olduğunu bilirik və sizi mümkün qədər tez işə qaytarmağa çalışırıq.',
+                'service-support-content-3': 'Komandamız sistemləri monitorinq etmək, potensial zəiflikləri müəyyən etmək və texnologiya infrastrukturunuzu təhlükəsiz və optimallaşdırılmış saxlamaq üçün profilaktik tədbirlər həyata keçirmək üçün çalışır. Profilaktikanın biznesinizin sabitliyini saxlamaq və dəyərli məlumatlarınızı qorumaq üçün açar olduğunu başa düşürük.',
+                'service-support-content-4': 'Ehtiyaclarınızı diqqətlə dinləyəcəyik və hər hansı texniki çətinliklərdən keçməkdə kömək etmək üçün düzgün izahatlar və təlimatlar təqdim edəcəyik. Məqsədimiz texnologiyanızdan ən çox faydalanmaq üçün lazım olan bilik və alətlərlə sizi gücləndirməkdir.',
+                
+                // ERP Consulting Service Detail Page
+                'service-consulting-content-1': 'Apertech-də ERP məsləhətçilik xidmətləri müştərilərimizin unikal biznes ehtiyaclarına uyğun fərdi həllər təqdim etmək üçün nəzərdə tutulub.',
+                'service-consulting-content-2': 'Yanaşmamız təşkilatınızın prosesləri, məqsədləri və çətinliklərinin dərindən başa düşülməsi ilə başlayır. Mövcud sistemlərinizin hərtərəfli təhlilini aparmaq və ERP həllinin əhəmiyyətli təkmilləşdirmələr gətirə biləcəyi sahələri müəyyən etmək üçün əsas paydaşlarla sıx əməkdaşlıq edirik.',
+                'service-consulting-content-3': 'Təcrübəli məsləhətçilərimizdən ibarət komandamız sistem fərdiləşdirməsi və konfiqurasiyasında mükəmməldir. Xüsusi tələblərinizi başa düşmək üçün vaxt ayırırıq və ERP sistemini iş axınlarınıza, hesabat ehtiyaclarınıza və sənaye qaydalarına uyğunlaşdırırıq. Məqsədimiz ERP sisteminin biznes mühitinizə səlis inteqrasiyasını təmin etməkdir.',
+                'service-consulting-content-4': 'ERP məsləhətçilik xidmətləri ilə biznesinizi səmərəli proseslər, təkmilləşdirilmiş qərarvermə və artırılmış məhsuldarlıqla gücləndirməyə çalışırıq. Təşkilatınız üçün ERP-in tam potensialını açmaqda etibarlı tərəfdaşınız olmağımıza icazə verin.'
             }
         };
         
@@ -345,13 +415,22 @@ class TranslationSystem {
         this.setupLanguageSwitcher();
     }
     
+    // Method to re-apply translations (useful when navigating between pages)
+    reapplyTranslations() {
+        this.applyTranslations();
+    }
+    
     applyTranslations() {
         const elements = document.querySelectorAll('[data-translate]');
         elements.forEach(element => {
             const key = element.getAttribute('data-translate');
             const translation = this.translations[this.currentLanguage][key];
             if (translation) {
-                element.textContent = translation;
+                if (element.tagName === 'TITLE') {
+                    element.textContent = translation;
+                } else {
+                    element.textContent = translation;
+                }
             }
         });
     }
@@ -361,6 +440,11 @@ class TranslationSystem {
         localStorage.setItem('selectedLanguage', language);
         this.applyTranslations();
         this.updateLanguageSwitcher();
+        
+        // Dispatch custom event for SPA and other systems to listen to
+        window.dispatchEvent(new CustomEvent('language:changed', {
+            detail: { language: language }
+        }));
     }
     
     setupLanguageSwitcher() {
@@ -437,5 +521,18 @@ class TranslationSystem {
 
 // Initialize translation system when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    window.translationSystem = new TranslationSystem();
+    // Only create new instance if one doesn't exist
+    if (!window.translationSystem) {
+        window.translationSystem = new TranslationSystem();
+    } else {
+        // Re-apply translations if system already exists
+        window.translationSystem.applyTranslations();
+    }
+});
+
+// Also apply translations when window loads (in case DOMContentLoaded already fired)
+window.addEventListener('load', function() {
+    if (window.translationSystem) {
+        window.translationSystem.applyTranslations();
+    }
 });

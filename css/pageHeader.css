@@ -843,12 +843,6 @@
     font-size: 31px;
   }
 
-  @media only screen and (max-width: 435px) {
-    #header__logo>a>img{
-      /* margin-top removed - using flexbox alignment */
-    }
-  }
-
 
 @media only screen and (max-width: 420px) {
 

@@ -65,6 +65,12 @@
     if (window.WOW) {
       try { new WOW().init(); } catch (e) {}
     }
+    
+    // Re-apply translations after content swap
+    if (window.translationSystem) {
+      window.translationSystem.applyTranslations();
+    }
+    
     return true;
   }
 
@@ -78,6 +84,11 @@
         }
         // Ensure back-to-top or other listeners remain
         window.dispatchEvent(new Event('services:content:swapped'));
+        
+        // Re-apply translations after navigation
+        if (window.translationSystem) {
+          window.translationSystem.applyTranslations();
+        }
       })
       .catch(function (err) {
         console.error('Navigation error:', err);
@@ -107,6 +118,13 @@
     window.addEventListener('popstate', function (ev) {
       var url = (ev.state && ev.state.url) ? ev.state.url : window.location.href;
       handleNavigation(url, false);
+    });
+    
+    // Listen for language changes and re-apply translations to SPA content
+    window.addEventListener('language:changed', function() {
+      if (window.translationSystem) {
+        window.translationSystem.applyTranslations();
+      }
     });
   });
 })();
