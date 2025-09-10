@@ -1,4 +1,4 @@
-#header {
+  #header {
     padding: 30px 0;
     height: 92px;
     position: fixed;
@@ -7,6 +7,8 @@
     right: 0;
     transition: all 0.5s;
     z-index: 997;
+    display: flex;
+    align-items: center;
   }
 
   #header__logo>a>img{
@@ -20,19 +22,18 @@
     .container {
       max-width: 70%;
       padding-right: 0px !important;
-    padding-left: 0px !important;
+      padding-left: 0px !important;
       margin: 0 auto;
       display: flex;
       align-items: center;
-      justify-content: center;
+      /* justify-content: space-between; */
       position: relative;
+      width: 100%;
     }
   
     #header #header__logo {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      position: relative;
+      flex-shrink: 0;
     }
 
   #header.header-fixed {
@@ -40,6 +41,8 @@
     padding: 20px 0;
     height: 100px;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
   }
   
   /*--------------------------------------------------------------
@@ -185,7 +188,8 @@
     justify-content: center;
     gap:70px;
     align-items: center;
-    /* float: right; */
+    flex-shrink: 0;
+    margin-left: 100PX;
   }
 
   /* Hide the Free Consulting button */
@@ -660,7 +664,6 @@
   #header__logo>a>img{
     height: 55px;
     width: 70px;
-    margin-top: 30px;
   }
 
 
@@ -703,6 +706,8 @@
   #header.header-fixed {
     /* padding: 10px 0; */
     height: 80px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -840,7 +845,7 @@
 
   @media only screen and (max-width: 435px) {
     #header__logo>a>img{
-      margin-top: 30px;
+      /* margin-top removed - using flexbox alignment */
     }
   }
 

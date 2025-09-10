@@ -11,7 +11,7 @@
 <link href="css/scrollToTop.css" rel="stylesheet">
 <link href="css/footerPage.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
-
+<link href="css/language-switcher.css" rel="stylesheet">
 
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
@@ -52,27 +52,27 @@
 	
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
-					<li class="menu-active"><a href="#">Home</a></li>
-					<li><a href="html/about.html">About Us</a></li>
-					<li class="menu-has-children"><a href="html/services.html">Services</a>
+					<li class="menu-active"><a href="#" data-translate="nav-home">Home</a></li>
+					<li><a href="html/about.html" data-translate="nav-about">About Us</a></li>
+					<li class="menu-has-children"><a href="html/services.html" data-translate="nav-services">Services</a>
 						<ul class="">
-							<li class="dropdown__top"><a href="html/servicesPages/services-detail-consulting.html"
+							<li class="dropdown__top"><a href="html/servicesPages/services-detail-consulting.html" data-translate="nav-erp-consultancy"
 									>ERP Counsultancy</a></li>
-							<li><a href="html/servicesPages/services-detail-web.html" >Web Development</a>
+							<li><a href="html/servicesPages/services-detail-web.html" data-translate="nav-web-development">Web Development</a>
 							</li>
-							<li><a href="html/servicesPages/services-detail-impl.html" >ERP
+							<li><a href="html/servicesPages/services-detail-impl.html" data-translate="nav-erp-implementation">ERP
 									Implementation</a></li>
-							<li><a href="html/servicesPages/services-detail-soft.html" >Soft
+							<li><a href="html/servicesPages/services-detail-soft.html" data-translate="nav-soft-implementation">Soft
 									Implementation</a></li>
-							<li><a href="html/servicesPages/services-detail-analytic.html" >Business
+							<li><a href="html/servicesPages/services-detail-analytic.html" data-translate="nav-business-analytics">Business
 									Analytics</a></li>
-							<li class="dropdown__bottom"><a href="html/servicesPages/services-detail-support.html"
+							<li class="dropdown__bottom"><a href="html/servicesPages/services-detail-support.html" data-translate="nav-support"
 									>Support</a></li>
 						</ul>
 					</li>
-					<li><a href="html/solutions.html">Solutions</a></li>
-					<li><a href="html/partners&clients.html">Partners & Clients</a></li>
-					<li><a href="html/contact.html">Contact Us</a></li>
+					<li><a href="html/solutions.html" data-translate="nav-solutions">Solutions</a></li>
+					<li><a href="html/partners&clients.html" data-translate="nav-partners">Partners & Clients</a></li>
+					<li><a href="html/contact.html" data-translate="nav-contact">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -81,17 +81,17 @@
 	<section id="banner__image">
 		<img src="images/banner/ERP proqramı.png" alt="ERP Program Banner" loading="eager">
 		<div class="banner__image-container">
-			<p class="text-white-100 animated slideInDown">Best ERP Solutions. We are 100+ professional software
+			<p class="text-white-100 animated slideInDown" data-translate="banner-title">Best ERP Solutions. We are 100+ professional software
 				engineers with more than 10 years of experience in delivering superior products.</p>
 			<div class="btns-box">
-				<a href="html/about.html" class="learn__btn"><span class="txt">Learn More</span></a>
+				<a href="html/about.html" class="learn__btn"><span class="txt" data-translate="banner-learn-more">Learn More</span></a>
 			</div>
 		</div>
 	</section>
 	
 	<!-- About Section -->
 	<div class="auto-container">
-		<h3 class="title__card">Our Products are used in industries such as:</h3>
+		<h3 class="title__card" data-translate="industries-title">Our Products are used in industries such as:</h3>
 		<div class="sector__cards">
 			<div class="sector__card">
 					<img
@@ -103,8 +103,8 @@
 					/>
 					<div class="sector__card__content flow searchable-element">
 					  <div class="sector__card__content--container flow">
-						<h2 class="sector__card__title">Construction</h2>
-						<p class="sector__card__description">
+						<h2 class="sector__card__title" data-translate="industry-construction">Construction</h2>
+						<p class="sector__card__description" data-translate="industry-construction-desc">
 							The construction industry is a dynamic and multifaceted sector that plays a crucial role in shaping the built environment.
 						</p>
 					  </div>
@@ -117,8 +117,8 @@
 					height="2193" />
 				<div class="sector__card__content flow">
 					<div class="sector__card__content--container flow">
-						<h2 class="sector__card__title">Production</h2>
-						<p class="sector__card__description">
+						<h2 class="sector__card__title" data-translate="industry-production">Production</h2>
+						<p class="sector__card__description" data-translate="industry-production-desc">
 							The production industry encompasses a vast range of activities focused on manufacturing goods and delivering value through efficient processes.
 						</p>
 					</div>
@@ -133,8 +133,8 @@
 					height="2193" />
 				<div class="sector__card__content flow">
 					<div class="sector__card__content--container flow">
-						<h2 class="sector__card__title">Oil And Gas</h2>
-						<p class="sector__card__description">
+						<h2 class="sector__card__title" data-translate="industry-oil-gas">Oil And Gas</h2>
+						<p class="sector__card__description" data-translate="industry-oil-gas-desc">
 							The oil and gas industry is a critical sector that powers economies worldwide by providing the energy resources essential for transportation, electricity generation, and industrial processes.
 						</p>
 					</div>
@@ -147,8 +147,8 @@
 					height="2193" />
 				<div class="sector__card__content flow">
 					<div class="sector__card__content--container flow">
-						<h2 class="sector__card__title">Financial</h2>
-						<p class="sector__card__description">
+						<h2 class="sector__card__title" data-translate="industry-financial">Financial</h2>
+						<p class="sector__card__description" data-translate="industry-financial-desc">
 							The finance industry is a cornerstone of the global economy, encompassing a broad spectrum of services related to the management, investment, and allocation of capital.
 						</p>
 					</div>
@@ -163,8 +163,8 @@
 					height="2193" />
 				<div class="sector__card__content flow">
 					<div class="sector__card__content--container flow">
-						<h2 class="sector__card__title"> Government sectors</h2>
-						<p class="sector__card__description">
+						<h2 class="sector__card__title" data-translate="industry-government"> Government sectors</h2>
+						<p class="sector__card__description" data-translate="industry-government-desc">
 							Government sectors encompass a broad range of public services, from law enforcement and defense to education, healthcare, infrastructure, and social services.
 						</p>
 					</div>
@@ -177,8 +177,8 @@
 					height="2193" />
 				<div class="sector__card__content flow">
 					<div class="sector__card__content--container flow">
-						<h2 class="sector__card__title">Hospitality</h2>
-						<p class="sector__card__description">
+						<h2 class="sector__card__title" data-translate="industry-hospitality">Hospitality</h2>
+						<p class="sector__card__description" data-translate="industry-hospitality-desc">
 							The hospitality industry is a diverse and dynamic sector that includes businesses focused on providing services for travel, leisure, and accommodation.
 						</p>
 					</div>
@@ -192,8 +192,8 @@
 	<!-- Services Section 2 -->
 	<section class="services_section">
 				<div class="sec-title centered">
-					<h2>We deal with the aspects of professional</h2>
-					<h2>ERP Services</h2>
+					<h2 data-translate="services-title-1">We deal with the aspects of professional</h2>
+					<h2 data-translate="services-title-2">ERP Services</h2>
 				</div>
 
 
@@ -204,11 +204,11 @@
 							<div class="so_top_icon">
 								<span class="icon "><img src="images/homePage/app-development.png" alt=""></span>
 							</div>
-							<p class="services_card_text_title">Web Application Development</p>
-							<p class="services_card_text_body">We carry more than just good coding skills. Our experience makes us stand out from other web development.</p>
+							<p class="services_card_text_title" data-translate="service-web-dev">Web Application Development</p>
+							<p class="services_card_text_body" data-translate="service-web-dev-desc">We carry more than just good coding skills. Our experience makes us stand out from other web development.</p>
 						</div>
 						<a href="html/servicesPages/services-detail-web.html" target="_blank">
-							<button class="services_card_button">More info</button>
+							<button class="services_card_button" data-translate="service-more-info">More info</button>
 						</a>
 					</div>
 
@@ -217,11 +217,11 @@
 							<div class="so_top_icon">
 								<span class="icon "><img src="images/homePage/erp.png" alt=""></span>
 							</div>
-							<p class="services_card_text_title">ERP implementation</p>
-							<p class="services_card_text_body">We offer comprehensive ERP implementation services to help you streamline your business processes and unlock new levels of efficiency.</p>
+							<p class="services_card_text_title" data-translate="service-erp-impl">ERP implementation</p>
+							<p class="services_card_text_body" data-translate="service-erp-impl-desc">We offer comprehensive ERP implementation services to help you streamline your business processes and unlock new levels of efficiency.</p>
 						</div>
 						<a href="html/servicesPages/services-detail-impl.html" target="_blank">
-							<button class="services_card_button">More info</button>
+							<button class="services_card_button" data-translate="service-more-info">More info</button>
 						</a>
 					</div>
 
@@ -230,11 +230,11 @@
 							<div class="so_top_icon">
 								<span class="icon "><img src="images/homePage/software.png" alt=""></span>
 							</div>
-							<p class="services_card_text_title">Soft Implementation</p>
-							<p class="services_card_text_body">We are here to assist you in navigating the process of implementing new software or upgrading your existing systems.</p>
+							<p class="services_card_text_title" data-translate="service-soft-impl">Soft Implementation</p>
+							<p class="services_card_text_body" data-translate="service-soft-impl-desc">We are here to assist you in navigating the process of implementing new software or upgrading your existing systems.</p>
 						</div>
 						<a href="html/servicesPages/services-detail-soft.html" target="_blank">
-							<button class="services_card_button">More info</button>
+							<button class="services_card_button" data-translate="service-more-info">More info</button>
 						</a>
 					</div>
 
@@ -243,11 +243,11 @@
 							<div class="so_top_icon">
 								<span class="icon "><img src="images/homePage/bar-graph.png" alt=""></span>
 							</div>
-							<p class="services_card_text_title">Business Analytics</p>
-							<p class="services_card_text_body">We offer comprehensive ERP business analytics services to help you harness the power of your data and drive informed decision-making for your organization.</p>
+							<p class="services_card_text_title" data-translate="service-analytics">Business Analytics</p>
+							<p class="services_card_text_body" data-translate="service-analytics-desc">We offer comprehensive ERP business analytics services to help you harness the power of your data and drive informed decision-making for your organization.</p>
 						</div>
 						<a href="html/servicesPages/services-detail-analytic.html" target="_blank">
-							<button class="services_card_button">More info</button>
+							<button class="services_card_button" data-translate="service-more-info">More info</button>
 						</a>
 					</div>
 
@@ -256,11 +256,11 @@
 							<div class="so_top_icon">
 								<span class="icon "><img src="images/homePage/customer-service.png" alt=""></span>
 							</div>
-							<p class="services_card_text_title">Support</p>
-							<p class="services_card_text_body">Support of ERP systems is a key element of successful use of the platform for business management.</p>
+							<p class="services_card_text_title" data-translate="service-support">Support</p>
+							<p class="services_card_text_body" data-translate="service-support-desc">Support of ERP systems is a key element of successful use of the platform for business management.</p>
 						</div>
 						<a href="html/servicesPages/services-detail-support.html" target="_blank">
-							<button class="services_card_button">More info</button>
+							<button class="services_card_button" data-translate="service-more-info">More info</button>
 						</a>
 					</div>
 
@@ -269,11 +269,11 @@
 							<div class="so_top_icon">
 								<span class="icon "><img src="images/homePage/consultant.png" alt=""></span>
 							</div>
-							<p class="services_card_text_title">ERP Consultancy</p>
-							<p class="services_card_text_body">With ERP consulting services, we strive to empower your business with efficient processes, improved decision-making, and enhanced productivity.</p>
+							<p class="services_card_text_title" data-translate="service-consultancy">ERP Consultancy</p>
+							<p class="services_card_text_body" data-translate="service-consultancy-desc">With ERP consulting services, we strive to empower your business with efficient processes, improved decision-making, and enhanced productivity.</p>
 						</div>
 						<a href="html/servicesPages/services-detail-consulting.html	" target="_blank">
-							<button class="services_card_button">More info</button>
+							<button class="services_card_button" data-translate="service-more-info">More info</button>
 						</a>
 					</div>
 					
@@ -285,7 +285,7 @@
 	<!-- Clients Section -->
 	<div class="auto-container">
 		<div class="homepage__clients__content">
-				<h3>Our Clients and Projects</h3>		
+				<h3 data-translate="clients-title">Our Clients and Projects</h3>		
 
 			<div class="swiper mySwiper2">
 				<div class="swiper-wrapper swiper__wrapper2">
@@ -436,18 +436,18 @@
 						<span class="circle" aria-hidden="true">
 							<span class="icon arrow"></span>
 						</span>
-						<span class="button-text">See All</span>
+						<span class="button-text" data-translate="clients-see-all">See All</span>
 					</button>
 				</a>
 			</div>
 
 		</div>
 		<div class="homepage__partners__content">
-			<div class="our_partners_text">
-				<a href="./html/partners&clients.html" target="_blank">
-					Our Partners
-				</a>
-			</div>
+				<div class="our_partners_text">
+					<a href="./html/partners&clients.html" target="_blank" data-translate="partners-title">
+						Our Partners
+					</a>
+				</div>
 	
 			<div class="all__card__partners">
 				<a href="https://www.infor.com/en" target="_blank">
@@ -486,14 +486,14 @@
 				<!-- Heading Column -->
 				<div class="heading-column ">
 					<div class="inner-column">
-						<h2>Preparing For Your Business</h2>
-						<h2>Success With ERP Solutions</h2>
+						<h2 data-translate="cta-title-1">Preparing For Your Business</h2>
+						<h2 data-translate="cta-title-2">Success With ERP Solutions</h2>
 					</div>
 				</div>
 				<!-- Button Column -->
 				<div class="button-column">
 					<div class="inner-column">
-						<a href="html/contact.html" class="theme-btn btn-style-one"><span class="txt">Meet With Us</span></a>
+						<a href="html/contact.html" class="theme-btn btn-style-one"><span class="txt" data-translate="cta-meet-us">Meet With Us</span></a>
 					</div>
 				</div>
 			</div>
@@ -510,11 +510,11 @@
 				<a href="index.html">
 					<img src="images/logoAnar.png" alt="APERTECH">
 				</a>
-				<p>We are a friendly business solutions consulting company providing all sizes of organization with leading-edge technology  solutions.</p>
+				<p data-translate="footer-description">We are a friendly business solutions consulting company providing all sizes of organization with leading-edge technology  solutions.</p>
 			  </div>
 	
 			  <div class="col-lg-3 col-md-6 footer-links">
-				<h4>Pages</h4>
+				<h4 data-translate="footer-pages">Pages</h4>
 				<ul>
 				  <li><i class="fa fa-angle-right"></i> <a href="index.html">Home</a></li>
 				  <li><i class="fa fa-angle-right"></i> <a href="html/about.html">About Us</a></li>
@@ -526,7 +526,7 @@
 			  </div>
 	
 			  <div class="col-lg-3 col-md-6 footer-links">
-				<h4>Services</h4>
+				<h4 data-translate="footer-services">Services</h4>
 				<ul>
 				  <li><i class="fa fa-angle-right"></i> <a href="html/servicesPages/services-detail-consulting.html" target="_blank">ERP Counsultancy</a></li>
 				  <li><i class="fa fa-angle-right"></i> <a href="html/servicesPages/services-detail-web.html" target="_blank">Web Development</a></li>
@@ -538,7 +538,7 @@
 			  </div>
 	
 			  <div class="col-lg-3 col-md-6 footer-contact">
-				<h4>Contact Us</h4>
+				<h4 data-translate="footer-contact">Contact Us</h4>
 				<div class="icon flaticon-placeholder-2 footer__contact__text">&nbsp;  Baku, 1/25 Ahmad Rajabli, Chinar Park, 2-nd Center, 4 floor </div>
 				<div class="icon flaticon-phone-call footer__contact__text"> <a href="tel:+786-875-864-75">&nbsp; +99450 718 10 19</a> </div>
 				<div class="icon flaticon-email-1 footer__contact__text"> <a href="mailto:info@apertech.net">&nbsp;  info@apertech.net</a> </div>
@@ -556,7 +556,7 @@
 	
 		
 		  <div class="copyright">
-			APERTECH Solutions. All Rights Reserved. © 2024
+			<span data-translate="footer-copyright">APERTECH Solutions. All Rights Reserved. © 2024</span>
 		</div>
 	</footer>
 	
@@ -643,6 +643,7 @@
 <script src="lib/superfish/superfish.min.js"></script>
 
 <script src="js/main.js"></script>
+<script src="js/translation.js"></script>
 
 </body>
 </html>
