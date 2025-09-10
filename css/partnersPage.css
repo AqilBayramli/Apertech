@@ -166,6 +166,7 @@
 }
 
 .clients__par{
+	margin-top: 20px;
 	text-align: center;
 	font-weight: bold;
 	color: #000000;
@@ -184,7 +185,7 @@
 	background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
 	border-radius: 20px;
 	box-shadow: 0 10px 30px rgba(82, 174, 202, 0.15);
-	height: 570px;
+	height: 520px;
 	display: flex;
 	flex-direction: column;
 	transition: all 0.3s ease;
