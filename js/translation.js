@@ -133,7 +133,41 @@ class TranslationSystem {
                 'services-soft-implementation-desc': 'We work closely with you to understand your specific requirements and recommend the best software solutions that fit your business model.',
                 'services-business-analytics-desc': 'With access to real-time and wholistic data, you can reduce your organization\'s financial statement revision rate.',
                 'services-web-development-desc': 'We carry more than just good coding skills. Our experience makes us stand out from other web development.',
-                'services-support-desc': 'Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.'
+                'services-support-desc': 'Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.',
+                
+                // Solutions Page
+                'solutions-offer-title': 'We offer following solutions for mid and big companies:',
+                'solutions-sunsystems-title': 'Infor SunSystems',
+                'solutions-sunsystems-desc': 'More than 18,000 organizations in 180 countries around the world use Infor FMS SunSystems to manage their financial and economic activity. It has 27 language versions, local support, unique flexibility and ability to respond quickly to changes in the business environment and legislative regulation, Infor FMS SunSystems is an ideal choice for enterprises that want to connect the hard financial control with flexible commercial processes.',
+                'solutions-syteline-title': 'Infor Syteline',
+                'solutions-syteline-desc': 'Discrete and process manufacturers around the world use Infor® SyteLine on-premises and in the cloud to simplify and automate their complex manufacturing processes. Offering a range of capabilities from advanced planning and material management to financials, SyteLine® delivers everything manufacturers need in a standard package.',
+                'solutions-query-analysis-title': 'Infor Query & Analysis',
+                'solutions-query-analysis-desc': 'Infor Query and Analysis for SunSystems is a powerful, ad-hoc querying and analysis tool that gives employees at all levels of your organization immediate access to the information that\'s relevant to their roles and tasks to make informed recommendations and strategic decisions.',
+                'solutions-genesis-title': 'Genesis Soft',
+                'solutions-genesis-desc-1': 'Genesis Soft is a business management software similar to ERP systems. It helps companies streamline daily operations by integrating key functions.',
+                'solutions-genesis-desc-2': 'Its purpose is to unify business processes in one system, reduce manual work, and provide better control over company performance.',
+                'solutions-sola-erp-title': 'Sola ERP',
+                'solutions-sola-erp-desc-1': 'Sola ERP is a type of software that helps organizations manage and integrate their core business processes in a single system.',
+                'solutions-sola-erp-desc-2': 'The main goal of ERP is to improve efficiency, transparency, and collaboration across all departments by centralizing data and workflows.',
+                'solutions-sola-hr-title': 'Sola HR',
+                'solutions-sola-hr-desc': 'HRB is a highly flexible HR & Payroll system with its own algorithm language. This gives availability to customize calculations of any difficulty.',
+                
+                // Contact Page
+                'contact-address': 'Address',
+                'contact-phone': 'Phone',
+                'contact-email': 'E-Mail',
+                'contact-hesitate-title': 'Do Not Hesitate To Contact Us',
+                'contact-write-title': 'Write Now............',
+                'contact-form-name': 'Name *',
+                'contact-form-email': 'Email *',
+                'contact-form-phone': 'Phone Number *',
+                'contact-form-company': 'Company Name *',
+                'contact-form-website': 'Website',
+                'contact-form-country': 'Country *',
+                'contact-form-business-line': 'Business Line *',
+                'contact-form-message': 'Message *',
+                'contact-form-send': 'Send',
+                'contact-form-success': 'Your message sent successfully !'
             },
             az: {
                 // Navigation
@@ -265,7 +299,41 @@ class TranslationSystem {
                 'services-soft-implementation-desc': 'Sizin xüsusi tələblərinizi başa düşmək və biznes modelinizə uyğun ən yaxşı proqram həllərini tövsiyə etmək üçün sizinlə sıx əməkdaşlıq edirik.',
                 'services-business-analytics-desc': 'Real vaxt və bütövlükdə məlumatlara girişlə təşkilatınızın maliyyə hesabatı düzəliş dərəcəsini azalda bilərsiniz.',
                 'services-web-development-desc': 'Biz yalnız yaxşı kodlaşdırma bacarıqlarından daha çoxunu daşıyırıq. Təcrübəmiz bizi digər veb inkişafdan fərqləndirir.',
-                'services-support-desc': 'Proqram təminatınızın hərtərəfli, çoxmərhələli test və auditini həyata keçirmək üçün ekspertlərimizə müraciət edin.'
+                'services-support-desc': 'Proqram təminatınızın hərtərəfli, çoxmərhələli test və auditini həyata keçirmək üçün ekspertlərimizə müraciət edin.',
+                
+                // Solutions Page
+                'solutions-offer-title': 'Orta və böyük şirkətlər üçün aşağıdakı həlləri təklif edirik:',
+                'solutions-sunsystems-title': 'Infor SunSystems',
+                'solutions-sunsystems-desc': 'Dünyada 180 ölkədə 18,000-dən çox təşkilat maliyyə və iqtisadi fəaliyyətlərini idarə etmək üçün Infor FMS SunSystems istifadə edir. 27 dil versiyası, yerli dəstək, unikal çeviklik və biznes mühitində və qanunvericilik tənzimləməsində dəyişikliklərə tez cavab vermək qabiliyyəti ilə Infor FMS SunSystems sərt maliyyə nəzarətini çevik kommersiya prosesləri ilə birləşdirmək istəyən müəssisələr üçün ideal seçimdir.',
+                'solutions-syteline-title': 'Infor Syteline',
+                'solutions-syteline-desc': 'Dünyada diskret və proses istehsalçıları mürəkkəb istehsal proseslərini sadələşdirmək və avtomatlaşdırmaq üçün Infor® SyteLine-i yerli və bulud mühitində istifadə edirlər. Qabaqcıl planlaşdırma və material idarəetməsindən maliyyəyə qədər geniş imkanlar təklif edən SyteLine® istehsalçıların ehtiyac duyduğu hər şeyi standart paketdə təqdim edir.',
+                'solutions-query-analysis-title': 'Infor Query & Analysis',
+                'solutions-query-analysis-desc': 'SunSystems üçün Infor Query və Analysis təşkilatınızın bütün səviyyələrindəki işçilərə rolları və vəzifələri ilə əlaqəli məlumatlara dərhal giriş təmin edən güclü, ad-hoc sorğu və analiz alətidir ki, bu da məlumatlı tövsiyələr və strategiyə qərarlar qəbul etməyə imkan verir.',
+                'solutions-genesis-title': 'Genesis Soft',
+                'solutions-genesis-desc-1': 'Genesis Soft ERP sistemlərinə bənzər biznes idarəetmə proqram təminatıdır. Şirkətlərin əsas funksiyaları inteqrasiya etməklə gündəlik əməliyyatları optimallaşdırmağına kömək edir.',
+                'solutions-genesis-desc-2': 'Məqsədi biznes proseslərini tək sistemdə birləşdirmək, əl işini azaltmaq və şirkət performansı üzərində daha yaxşı nəzarət təmin etməkdir.',
+                'solutions-sola-erp-title': 'Sola ERP',
+                'solutions-sola-erp-desc-1': 'Sola ERP təşkilatların əsas biznes proseslərini tək sistemdə idarə etməkdə və inteqrasiya etməkdə kömək edən proqram təminatı növüdür.',
+                'solutions-sola-erp-desc-2': 'ERP-in əsas məqsədi məlumatları və iş axınlarını mərkəzləşdirməklə bütün şöbələr arasında səmərəlilik, şəffaflıq və əməkdaşlığı təkmilləşdirməkdir.',
+                'solutions-sola-hr-title': 'Sola HR',
+                'solutions-sola-hr-desc': 'HRB öz alqoritm dilinə malik yüksək çevik HR və Əməkhaqqı sistemidir. Bu, hər hansı çətinlik hesablamalarını fərdiləşdirmək imkanı verir.',
+                
+                // Contact Page
+                'contact-address': 'Ünvan',
+                'contact-phone': 'Telefon',
+                'contact-email': 'E-Poçt',
+                'contact-hesitate-title': 'Bizimlə Əlaqə Saxlamaqdan Çəkinməyin',
+                'contact-write-title': 'İndi Yazın............',
+                'contact-form-name': 'Ad *',
+                'contact-form-email': 'E-Poçt *',
+                'contact-form-phone': 'Telefon Nömrəsi *',
+                'contact-form-company': 'Şirkət Adı *',
+                'contact-form-website': 'Veb Sayt',
+                'contact-form-country': 'Ölkə *',
+                'contact-form-business-line': 'Biznes Sahəsi *',
+                'contact-form-message': 'Mesaj *',
+                'contact-form-send': 'Göndər',
+                'contact-form-success': 'Mesajınız uğurla göndərildi !'
             }
         };
         

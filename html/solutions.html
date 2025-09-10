@@ -11,6 +11,7 @@
 <link href="../css/scrollToTop.css" rel="stylesheet">
 <link href="../css/footerPage.css" rel="stylesheet">
 <link href="../css/solutionsPage.css" rel="stylesheet">
+<link href="../css/language-switcher.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -50,21 +51,21 @@
 	
 		  <nav id="nav-menu-container">
 			<ul class="nav-menu">
-			  <li><a href="../index.html">Home</a></li>
-			  <li><a href="about.html">About Us</a></li>
-			  <li class="menu-has-children"><a href="services.html">Services</a>
+			  <li><a href="../index.html" data-translate="nav-home">Home</a></li>
+			  <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+			  <li class="menu-has-children"><a href="services.html" data-translate="nav-services">Services</a>
 				<ul>
-					<li class="dropdown__top"><a href="./servicesPages/services-detail-consulting.html" >ERP Counsultancy</a></li>
-					<li><a href="./servicesPages/services-detail-web.html">Web Development</a></li>
-					<li><a href="./servicesPages/services-detail-impl.html">ERP Implementation</a></li>
-					<li><a href="./servicesPages/services-detail-soft.html">Soft Implementation</a></li>
-					<li><a href="./servicesPages/services-detail-analytic.html">Business Analytics</a></li>
-					<li class="dropdown__bottom"><a href="./servicesPages/services-detail-support.html">Support</a></li>
+					<li class="dropdown__top"><a href="./servicesPages/services-detail-consulting.html" data-translate="nav-erp-consultancy">ERP Counsultancy</a></li>
+					<li><a href="./servicesPages/services-detail-web.html" data-translate="nav-web-development">Web Development</a></li>
+					<li><a href="./servicesPages/services-detail-impl.html" data-translate="nav-erp-implementation">ERP Implementation</a></li>
+					<li><a href="./servicesPages/services-detail-soft.html" data-translate="nav-soft-implementation">Soft Implementation</a></li>
+					<li><a href="./servicesPages/services-detail-analytic.html" data-translate="nav-business-analytics">Business Analytics</a></li>
+					<li class="dropdown__bottom"><a href="./servicesPages/services-detail-support.html" data-translate="nav-support">Support</a></li>
 				  </ul>
 			  </li>
-			  <li class="menu-active"><a href="#">Solutions</a></li>
-			  <li><a href="partners&clients.html">Partners & Clients</a></li>
-			  <li><a href="contact.html">Contact Us</a></li>
+			  <li class="menu-active"><a href="#" data-translate="nav-solutions">Solutions</a></li>
+			  <li><a href="partners&clients.html" data-translate="nav-partners">Partners & Clients</a></li>
+			  <li><a href="contact.html" data-translate="nav-contact">Contact Us</a></li>
 			</ul>
 		</nav>
 		</div>
@@ -74,10 +75,10 @@
     <section class="page__header__title">
 		<div><img src="../images/solutions/header-collaborate.jpg"></div>
     	<div class="header__image__text">
-			<h2>Solutions</h2>
+			<h2 data-translate="nav-solutions">Solutions</h2>
 			<ul class="page-breadcrumb">
-				<li><a href="../index.html">Home</a></li>
-				<li class="title__text__page">Solutions</li>
+				<li><a href="../index.html" data-translate="nav-home">Home</a></li>
+				<li class="title__text__page" data-translate="nav-solutions">Solutions</li>
 			</ul>
         </div>
     </section>
@@ -85,7 +86,7 @@
 	
 	<!-- Solution Section -->
 	<div class="auto-container">
-		<h4 class="solutions__top__text">We offer following solutions for mid and big companies:</h4>
+		<h4 class="solutions__top__text" data-translate="solutions-offer-title">We offer following solutions for mid and big companies:</h4>
 	</div>
 		
 		<div class="solution__boxes__content">
@@ -99,8 +100,8 @@
 					</div>
 		
 					<div class="solution__box__right">
-						<h2>Infor SunSystems</h2>
-						<p>More than 18,000 organizations in 180 countries around the world use Infor FMS SunSystems to manage
+						<h2 data-translate="solutions-sunsystems-title">Infor SunSystems</h2>
+						<p data-translate="solutions-sunsystems-desc">More than 18,000 organizations in 180 countries around the world use Infor FMS SunSystems to manage
 							their
 							financial and economic activity. It has 27 language versions, local support, unique flexibility and
 							ability
@@ -122,8 +123,8 @@
 					</div>
 		
 					<div class="solution__box__right">
-						<h2>Infor Syteline</h2>
-						<p>Discrete and process manufacturers around the world use Infor® SyteLine on-premises and in the cloud
+						<h2 data-translate="solutions-syteline-title">Infor Syteline</h2>
+						<p data-translate="solutions-syteline-desc">Discrete and process manufacturers around the world use Infor® SyteLine on-premises and in the cloud
 							to simplify and automate their complex manufacturing processes. Offering a range of capabilities
 							from advanced planning and material management to financials, SyteLine® delivers everything
 							manufacturers need in a standard package.</p>
@@ -141,9 +142,9 @@
 					</div>
 		
 					<div class="solution__box__right">
-						<h2>Infor Query & Analysis</h2>
-						<p>Infor Query and Analysis for SunSystems is a powerful, ad-hoc querying and analysis tool that gives
-							employees at all levels of your organization immediate access to the information that’s relevant to
+						<h2 data-translate="solutions-query-analysis-title">Infor Query & Analysis</h2>
+						<p data-translate="solutions-query-analysis-desc">Infor Query and Analysis for SunSystems is a powerful, ad-hoc querying and analysis tool that gives
+							employees at all levels of your organization immediate access to the information that's relevant to
 							their roles and tasks to make informed recommendations and strategic decisions.</p>
 					</div>
 				</div>
@@ -160,9 +161,9 @@
 					</div>
 		
 					<div class="solution__box__right">
-						<h2>Genesis Soft</h2>
-						<p>Genesis Soft is a business management software similar to ERP systems. It helps companies streamline daily operations by integrating key functions.</p>
-						<p>Its purpose is to unify business processes in one system, reduce manual work, and provide better control over company performance.</p>
+						<h2 data-translate="solutions-genesis-title">Genesis Soft</h2>
+						<p data-translate="solutions-genesis-desc-1">Genesis Soft is a business management software similar to ERP systems. It helps companies streamline daily operations by integrating key functions.</p>
+						<p data-translate="solutions-genesis-desc-2">Its purpose is to unify business processes in one system, reduce manual work, and provide better control over company performance.</p>
 					</div>
 				</div>
 			</div>
@@ -178,9 +179,9 @@
 					</div>
 		
 					<div class="solution__box__right">
-						<h2>Sola ERP</h2>
-						<p>Sola ERP is a type of software that helps organizations manage and integrate their core business processes in a single system.</p>
-						<p>The main goal of ERP is to improve efficiency, transparency, and collaboration across all departments by centralizing data and workflows.</p>
+						<h2 data-translate="solutions-sola-erp-title">Sola ERP</h2>
+						<p data-translate="solutions-sola-erp-desc-1">Sola ERP is a type of software that helps organizations manage and integrate their core business processes in a single system.</p>
+						<p data-translate="solutions-sola-erp-desc-2">The main goal of ERP is to improve efficiency, transparency, and collaboration across all departments by centralizing data and workflows.</p>
 					</div>
 				</div>
 			</div>
@@ -196,8 +197,8 @@
 					</div>
 		
 					<div class="solution__box__right">
-						<h2>Sola HR</h2>
-						<p>HRB is a highly flexible HR & Payroll system with its own algorithm language. This gives availability
+						<h2 data-translate="solutions-sola-hr-title">Sola HR</h2>
+						<p data-translate="solutions-sola-hr-desc">HRB is a highly flexible HR & Payroll system with its own algorithm language. This gives availability
 							to customize calculations of any difficulty.</p>
 					</div>
 				</div>
@@ -215,35 +216,35 @@
 				<a href="../index.html">
 					<img src="../images/logoAnar.png" alt="APERTECH">
 				</a>
-				<p>We are a friendly business solutions consulting company providing all sizes of organization with leading-edge technology  solutions.</p>
+				<p data-translate="footer-description">We are a friendly business solutions consulting company providing all sizes of organization with leading-edge technology  solutions.</p>
 			  </div>
 	
 			  <div class="col-lg-3 col-md-6 footer-links">
-				<h4>Pages</h4>
+				<h4 data-translate="footer-pages">Pages</h4>
 				<ul>
-				  <li><i class="fa fa-angle-right"></i> <a href="../index.html">Home</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="about.html">About Us</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="services.html">Services</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="solutions.html">Solutions</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="partners&clients.html">Partners & Clients</a></li>
-				  <li><i class="fa fa-angle-right"></i> <a href="contact.html">Contact Us</a></li>
+				  <li><i class="fa fa-angle-right"></i> <a href="../index.html" data-translate="nav-home">Home</a></li>
+				  <li><i class="fa fa-angle-right"></i> <a href="about.html" data-translate="nav-about">About Us</a></li>
+				  <li><i class="fa fa-angle-right"></i> <a href="services.html" data-translate="nav-services">Services</a></li>
+				  <li><i class="fa fa-angle-right"></i> <a href="solutions.html" data-translate="nav-solutions">Solutions</a></li>
+				  <li><i class="fa fa-angle-right"></i> <a href="partners&clients.html" data-translate="nav-partners">Partners & Clients</a></li>
+				  <li><i class="fa fa-angle-right"></i> <a href="contact.html" data-translate="nav-contact">Contact Us</a></li>
 				</ul>
 			  </div>
 	
 			  <div class="col-lg-3 col-md-6 footer-links">
-				<h4>Services</h4>
+				<h4 data-translate="footer-services">Services</h4>
 				<ul>
-					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-consulting.html" target="_blank">ERP Counsultancy</a></li>
-					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-web.html" target="_blank">Web Development</a></li>
-					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-impl.html" target="_blank">ERP Implementation</a></li>
-					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-soft.html" target="_blank">Soft Implementation</a></li>
-					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-analytic.html" target="_blank">Business Analytics</a></li>
-					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-support.html" target="_blank">Support</a></li>
+					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-consulting.html" target="_blank" data-translate="nav-erp-consultancy">ERP Counsultancy</a></li>
+					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-web.html" target="_blank" data-translate="nav-web-development">Web Development</a></li>
+					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-impl.html" target="_blank" data-translate="nav-erp-implementation">ERP Implementation</a></li>
+					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-soft.html" target="_blank" data-translate="nav-soft-implementation">Soft Implementation</a></li>
+					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-analytic.html" target="_blank" data-translate="nav-business-analytics">Business Analytics</a></li>
+					<li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-support.html" target="_blank" data-translate="nav-support">Support</a></li>
 				</ul>
 			  </div>
 	
 			  <div class="col-lg-3 col-md-6 footer-contact">
-				<h4>Contact Us</h4>
+				<h4 data-translate="footer-contact">Contact Us</h4>
 				<div class="icon flaticon-placeholder-2 footer__contact__text">&nbsp;  Baku, 1/25 Ahmad Rajabli, Chinar Park, 2-nd Center, 4 floor </div>
 				<div class="icon flaticon-phone-call footer__contact__text"> <a href="tel:+786-875-864-75">&nbsp; +99450 718 10 19</a> </div>
 				<div class="icon flaticon-email-1 footer__contact__text"> <a href="mailto:info@apertech.net">&nbsp;  info@apertech.net</a> </div>
@@ -259,7 +260,7 @@
 		</div>
 		
 		  <div class="copyright">
-			APERTECH Solutions. All Rights Reserved. © 2024
+			<span data-translate="footer-copyright">APERTECH Solutions. All Rights Reserved. © 2024</span>
 		</div>
 	  </footer>
 	
@@ -297,6 +298,7 @@
 <script src="../lib/superfish/superfish.min.js"></script>
 
 <script src="../js/main.js"></script>
+<script src="../js/translation.js"></script>
 
 </body>
 </html>

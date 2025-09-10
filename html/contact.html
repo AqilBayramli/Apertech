@@ -13,6 +13,7 @@
 <link href="../css/scrollToTop.css" rel="stylesheet">
 <link href="../css/footerPage.css" rel="stylesheet">
 <link href="../css/servicePage.css" rel="stylesheet">
+<link href="../css/language-switcher.css" rel="stylesheet">
 
 
 
@@ -68,21 +69,21 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 	
 		  <nav id="nav-menu-container">
 			<ul class="nav-menu">
-			  <li><a href="../index.html">Home</a></li>
-			  <li><a href="about.html">About Us</a></li>
-			  <li class="menu-has-children"><a href="services.html">Services</a>
+			  <li><a href="../index.html" data-translate="nav-home">Home</a></li>
+			  <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+			  <li class="menu-has-children"><a href="services.html" data-translate="nav-services">Services</a>
 				<ul>
-					<li class="dropdown__top"><a href="./servicesPages/services-detail-consulting.html" >ERP Counsultancy</a></li>
-					<li><a href="./servicesPages/services-detail-web.html">Web Development</a></li>
-					<li><a href="./servicesPages/services-detail-impl.html">ERP Implementation</a></li>
-					<li><a href="./servicesPages/services-detail-soft.html">Soft Implementation</a></li>
-					<li><a href="./servicesPages/services-detail-analytic.html">Business Analytics</a></li>
-					<li class="dropdown__bottom"><a href="./servicesPages/services-detail-support.html">Support</a></li>
+					<li class="dropdown__top"><a href="./servicesPages/services-detail-consulting.html" data-translate="nav-erp-consultancy">ERP Counsultancy</a></li>
+					<li><a href="./servicesPages/services-detail-web.html" data-translate="nav-web-development">Web Development</a></li>
+					<li><a href="./servicesPages/services-detail-impl.html" data-translate="nav-erp-implementation">ERP Implementation</a></li>
+					<li><a href="./servicesPages/services-detail-soft.html" data-translate="nav-soft-implementation">Soft Implementation</a></li>
+					<li><a href="./servicesPages/services-detail-analytic.html" data-translate="nav-business-analytics">Business Analytics</a></li>
+					<li class="dropdown__bottom"><a href="./servicesPages/services-detail-support.html" data-translate="nav-support">Support</a></li>
 					</ul>
 			  </li>
-			  <li><a href="solutions.html">Solutions</a></li>
-			  <li><a href="partners&clients.html">Partners & Clients</a></li>
-			  <li class="menu-active"><a href="#">Contact Us</a></li>
+			  <li><a href="solutions.html" data-translate="nav-solutions">Solutions</a></li>
+			  <li><a href="partners&clients.html" data-translate="nav-partners">Partners & Clients</a></li>
+			  <li class="menu-active"><a href="#" data-translate="nav-contact">Contact Us</a></li>
 			</ul>
 
 		</nav>
@@ -93,10 +94,10 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     <section class="page__header__title">
 		<div><img src="../images/contact/2019-06_Contact-Us.webp"></div>
     	<div class="header__image__text">
-			<h2>Contact Us</h2>
+			<h2 data-translate="nav-contact">Contact Us</h2>
 			<ul class="page-breadcrumb">
-				<li><a href="../index.html">Home</a></li>
-				<li class="title__text__page">Contact Us</li>
+				<li><a href="../index.html" data-translate="nav-home">Home</a></li>
+				<li class="title__text__page" data-translate="nav-contact">Contact Us</li>
 			</ul>
         </div>
     </section>
@@ -116,7 +117,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 							<!-- <div class="icon-box"><span class="flaticon-pin"></span></div> -->
 							<div class="icon-box"><img class="contact__icon" src="../images/contact/navigator.png" alt=""></div>
 							<ul>
-								<li><strong>Address</strong></li>
+								<li><strong data-translate="contact-address">Address</strong></li>
 								<li>Baku, 1/25 Ahmad Rajabli, Chinar Park, 2-nd Center, 4 floor</li>
 							</ul>
 						</div>
@@ -130,7 +131,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 							<!-- <div class="icon-box"><span class="flaticon-phone-call"></span></div> -->
 							<div class="icon-box"><img class="contact__icon" src="../images/contact/telephone-call.png" alt=""></div>
 							<ul>
-								<li><strong>Phone</strong></li>
+								<li><strong data-translate="contact-phone">Phone</strong></li>
 								<li>+99450 718 10 19</li>
 							</ul>
 						</div>
@@ -143,7 +144,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 						<div class="content">
 							<div class="icon-box"><img class="contact__icon" src="../images/contact/email.png" alt=""></div>
 							<ul>
-								<li><strong>E-Mail</strong></li>
+								<li><strong data-translate="contact-email">E-Mail</strong></li>
 								<li>info@apertech.net</li>
 							</ul>
 						</div>
@@ -187,8 +188,8 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 					<!-- Form Column -->
 					<div class="form-column col-lg-6 col-md-12 col-sm-12">
 						<div class="inner-column">
-							<h4>Do Not Hesitate To Contact Us</h4>
-							<h4>Write Now............</h4>
+							<h4 data-translate="contact-hesitate-title">Do Not Hesitate To Contact Us</h4>
+							<h4 data-translate="contact-write-title">Write Now............</h4>
 							<!-- Appointment Form -->
 							<div class="appointment-form">
 
@@ -198,7 +199,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 											<div class="group">      
 												<input id="contactName" type="text" name="username" required>
 												<span class="highlight"></span>
-												<label>Name *</label>
+												<label data-translate="contact-form-name">Name *</label>
 											  </div>
 							</div>
 							
@@ -206,7 +207,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 								<div class="group">      
 									<input id="contactEmail" type="email" name="email" required>
 								  <span class="highlight"></span>
-								  <label>Email *</label>
+								  <label data-translate="contact-form-email">Email *</label>
 								</div>
 							</div>
 							
@@ -214,7 +215,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 								<div class="group">      
 									<input id="phoneNumber" type="tel" name="num" required>
 									<span class="highlight"></span>
-									<label>Phone Number *</label>
+									<label data-translate="contact-form-phone">Phone Number *</label>
 								</div>
 							</div>
 							
@@ -222,7 +223,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 								<div class="group">      
 									<input id="companyName" type="text" name="compName" required>
 									<span class="highlight"></span>
-									<label>Company Name *</label>
+									<label data-translate="contact-form-company">Company Name *</label>
 								  </div>
 							</div>
 							
@@ -230,14 +231,14 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 								<div class="group">      
 									<input id="companyWeb" type="text" name="site" required>
 									<span class="highlight"></span>
-									<label>Website</label>
+									<label data-translate="contact-form-website">Website</label>
 								</div>
 							</div>
 							
 							<div class="col-lg-12 col-md-6 col-sm-12 form-group">
 								<div class="group">      
 									<select name="Country" id="contactCountry" required>
-									<option value="" disabled selected hidden>Country</option>
+									<option value="" disabled selected hidden data-translate="contact-form-country">Country</option>
 									<option value="Afghanistan">Afghanistan</option>
 													<option value="Aland Islands">Aland Islands</option>
 													<option value="Albania">Albania</option>
@@ -471,14 +472,14 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 													<option value="Zimbabwe">Zimbabwe</option>
 									</select>
 									<span class="highlight"></span>
-									<label>Country *</label>
+									<label data-translate="contact-form-country">Country *</label>
 								  </div>
 							</div>
 							
 							<div class="col-lg-12 col-md-6 col-sm-12 form-group">
 								<div class="group">      
 									<select name="line" id="companySolutions" type="text" required>
-										<option value="" disabled selected hidden>Business Line</option>
+										<option value="" disabled selected hidden data-translate="contact-form-business-line">Business Line</option>
 										<option value="Aerospace and Defense">Aerospace and Defense</option>
 										<option value="Distribution">Distribution</option>
 										<option value="Equipment">Equipment</option>
@@ -495,7 +496,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 										<option value="Workforce Management">Workforce Management</option>
 									</select>
 									<span class="highlight"></span>
-									<label>Business Line *</label>
+									<label data-translate="contact-form-business-line">Business Line *</label>
 								  </div>
 							</div>
 							
@@ -503,7 +504,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 								<div class="group">      
 									<textarea id="msg" name="message" required></textarea>
 									<span class="highlight"></span>
-									<label>Message *</label>
+									<label data-translate="contact-form-message">Message *</label>
 								  </div>							</div>
 
 										<!-- <div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -516,7 +517,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 												<i class="fa-solid fa-location-arrow"></i>
 											  </div>
 											</div>
-											<span>Send</span>
+											<span data-translate="contact-form-send">Send</span>
 										  </button>
 
 									</div>
@@ -526,7 +527,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 											  <i class="fas fa-solid fa-check check"></i>
 										  
 											  <div class="message">
-												<span class="text text-1">Your message sent successfully !</span>
+												<span class="text text-1" data-translate="contact-form-success">Your message sent successfully !</span>
 												<!-- <span class="text text-2">Your changes has been saved</span> -->
 											  </div>
 											</div>
@@ -642,6 +643,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
 
 
 <script src="../js/main.js"></script>
+<script src="../js/translation.js"></script>
 
 
 
