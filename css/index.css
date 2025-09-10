@@ -376,7 +376,7 @@
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 15px;
     right: 0;
     bottom: 0;
     padding: 0.75rem 0;
@@ -586,8 +586,8 @@ color: #2b7bfc !important;
 ***/
 
 .call-to-action-section{
-	margin-top: 120px;
-	margin-bottom: 110px;
+	margin-top: 80px;
+	margin-bottom: 90px;
 	position:relative;
 	overflow:hidden;
 	padding:85px 0px;
@@ -1075,6 +1075,20 @@ color: #2b7bfc !important;
   }
 }
 
+@media only screen and (max-width: 920px) {
+  .clients__box__card{
+    width: 260px;
+    height: 160px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .clients__box__card{
+    width: 230px;
+    height: 160px;
+}
+}
+
 @media only screen and (max-width: 768px) {
   .mySwiper2{
     max-width: 97%;
@@ -1115,7 +1129,7 @@ color: #2b7bfc !important;
  
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 435px) {
   .mySwiper2{
     max-width: 100%;
   }
@@ -1125,8 +1139,8 @@ color: #2b7bfc !important;
   }
   
   .swiper-slide .clients__box__card {
-    margin-left: 37px;
-    width: 260px;
+    margin-left: 50px;
+    width: 270px;
     height: 180px;
   }
 
@@ -1143,10 +1157,19 @@ color: #2b7bfc !important;
 
 }
 
+@media only screen and (max-width: 394px) {
+  .swiper-slide .clients__box__card {
+    margin-left: 37px;
+  }
+
+}
+
 @media only screen and (max-width: 375px) {
     .clients__box__card {
         width: 250px;
         height: 170px;
+    margin-left: 37px;
+
     }
 
     .clients__box__card img {
