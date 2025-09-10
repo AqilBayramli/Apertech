@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="../css/alert.css">
 <link href="../css/pageHeader.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/contact.css">
+<link href="../css/language-switcher.css" rel="stylesheet">
 
 
 
@@ -55,21 +56,21 @@
 	
 		  <nav id="nav-menu-container">
 			<ul class="nav-menu">
-			  <li><a href="/index.html">Home</a></li>
-			  <li><a href="about.html">About Us</a></li>
-			  <li class="menu-active menu-has-children"><a href="#">Services</a>
+			  <li><a href="/index.html" data-translate="nav-home">Home</a></li>
+			  <li><a href="about.html" data-translate="nav-about">About Us</a></li>
+			  <li class="menu-active menu-has-children"><a href="#" data-translate="nav-services">Services</a>
 				<ul>
-					<li class="dropdown__top"><a href="./servicesPages/services-detail-consulting.html" >ERP Counsultancy</a></li>
-					<li><a href="./servicesPages/services-detail-web.html">Web Development</a></li>
-					<li><a href="./servicesPages/services-detail-impl.html">ERP Implementation</a></li>
-					<li><a href="./servicesPages/services-detail-soft.html">Soft Implementation</a></li>
-					<li><a href="./servicesPages/services-detail-analytic.html">Business Analytics</a></li>
-					<li class="dropdown__bottom"><a href="./servicesPages/services-detail-support.html">Support</a></li>
+					<li class="dropdown__top"><a href="./servicesPages/services-detail-consulting.html" data-translate="nav-erp-consultancy">ERP Counsultancy</a></li>
+					<li><a href="./servicesPages/services-detail-web.html" data-translate="nav-web-development">Web Development</a></li>
+					<li><a href="./servicesPages/services-detail-impl.html" data-translate="nav-erp-implementation">ERP Implementation</a></li>
+					<li><a href="./servicesPages/services-detail-soft.html" data-translate="nav-soft-implementation">Soft Implementation</a></li>
+					<li><a href="./servicesPages/services-detail-analytic.html" data-translate="nav-business-analytics">Business Analytics</a></li>
+					<li class="dropdown__bottom"><a href="./servicesPages/services-detail-support.html" data-translate="nav-support">Support</a></li>
 				  </ul>
 			  </li>
-			  <li><a href="solutions.html">Solutions</a></li>
-			  <li><a href="partners&clients.html">Partners & Clients</a></li>
-			  <li><a href="contact.html">Contact Us</a></li>
+			  <li><a href="solutions.html" data-translate="nav-solutions">Solutions</a></li>
+			  <li><a href="partners&clients.html" data-translate="nav-partners">Partners & Clients</a></li>
+			  <li><a href="contact.html" data-translate="nav-contact">Contact Us</a></li>
 			</ul>
 		</nav>
 		</div>
@@ -79,10 +80,10 @@
     <section class="page__header__title">
 		<div><img src="../images/services/diverse-businesspeople-having-meeting_53876-103954.avif"></div>
     	<div class="auto-container header__image__text">
-			<h2>Services</h2>
+			<h2 data-translate="nav-services">Services</h2>
 			<ul class="page-breadcrumb">
-				<li><a href="/index.html">Home</a></li>
-				<li class="title__text__page">Services</li>
+				<li><a href="/index.html" data-translate="nav-home">Home</a></li>
+				<li class="title__text__page" data-translate="nav-services">Services</li>
 			</ul>
         </div>
     </section>
@@ -91,7 +92,7 @@
 	<!-- Services Page Section -->
 	<section class="services-page-section">
 		<div class="auto-container">
-			<h3 class="boxes__title__text">We offer the following services:</h3>
+			<h3 class="boxes__title__text" data-translate="services-offer-title">We offer the following services:</h3>
 			<div class="row clearfix flex">
 				
 				<!-- News Block Three -->
@@ -104,8 +105,8 @@
 						<div class="lower-content">
 							<div class="content">
 						
-								<h4>ERP Consultancy</h4>
-								<div class="text services__box__text"> We offers advisory support to help companies implement an efficient ERP solution or maximize the value of existing ERP software. </div>
+								<h4 data-translate="nav-erp-consultancy">ERP Consultancy</h4>
+								<div class="text services__box__text" data-translate="services-erp-consultancy-desc"> We offers advisory support to help companies implement an efficient ERP solution or maximize the value of existing ERP software. </div>
 							</div>
 						</div>
 					</a>
@@ -122,8 +123,8 @@
 						<div class="lower-content">
 							<div class="content">
 						
-								<h4>ERP Implementation</h4>
-								<div class="text services__box__text">This process includes the integration of various business functions, such as finance, operations and human resources (HR), into a single system.</div>
+								<h4 data-translate="nav-erp-implementation">ERP Implementation</h4>
+								<div class="text services__box__text" data-translate="services-erp-implementation-desc">This process includes the integration of various business functions, such as finance, operations and human resources (HR), into a single system.</div>
 							</div>
 						</div>
 					</a>
@@ -141,8 +142,8 @@
 							<div class="lower-content">
 								<div class="content">
 								
-									<h4>Soft Implementation</h4>
-									<div class="text services__box__text">We work closely with you to understand your specific requirements and recommend the best software solutions that fit your business model.</div>
+									<h4 data-translate="nav-soft-implementation">Soft Implementation</h4>
+									<div class="text services__box__text" data-translate="services-soft-implementation-desc">We work closely with you to understand your specific requirements and recommend the best software solutions that fit your business model.</div>
 								</div>
 							</div>
 						</a>
@@ -160,8 +161,8 @@
 							<div class="lower-content">
 								<div class="content">
 								
-									<h4>Business Analytics</h4>
-									<div class="text services__box__text">With access to real-time and wholistic data, you can reduce your organization’s financial statement revision rate.</div>
+									<h4 data-translate="nav-business-analytics">Business Analytics</h4>
+									<div class="text services__box__text" data-translate="services-business-analytics-desc">With access to real-time and wholistic data, you can reduce your organization's financial statement revision rate.</div>
 								</div>
 							</div>
 						</a>
@@ -178,8 +179,8 @@
 							<div class="lower-content">
 								<div class="content">
 								
-									<h4>WEB Development</h4>
-									<div class="text services__box__text">We carry more than just good coding skills. Our experience makes us stand out from other web development.</div>
+									<h4 data-translate="nav-web-development">WEB Development</h4>
+									<div class="text services__box__text" data-translate="services-web-development-desc">We carry more than just good coding skills. Our experience makes us stand out from other web development.</div>
 								</div>
 							</div>
 						</a>
@@ -197,8 +198,8 @@
 							<div class="lower-content">
 								<div class="content">
 								
-									<h4>Support</h4>
-									<div class="text services__box__text">Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.</div>
+									<h4 data-translate="nav-support">Support</h4>
+									<div class="text services__box__text" data-translate="services-support-desc">Turn to our experts to perform comprehensive, multi-stage testing and auditing of your software.</div>
 								</div>
 							</div>
 						</a>
@@ -220,35 +221,35 @@
 					<a href="../index.html">
 						<img src="../images/logoAnar.png" alt="APERTECH">
 					</a>
-					<p>We are a friendly business solutions consulting company providing all sizes of organization with leading-edge technology  solutions.</p>
+					<p data-translate="footer-description">We are a friendly business solutions consulting company providing all sizes of organization with leading-edge technology  solutions.</p>
 				  </div>
 		
 				  <div class="col-lg-3 col-md-6 footer-links">
-					<h4>Pages</h4>
+					<h4 data-translate="footer-pages">Pages</h4>
 					<ul>
-					  <li><i class="fa fa-angle-right"></i> <a href="../index.html">Home</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="about.html">About Us</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="services.html">Services</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="solutions.html">Solutions</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="partners&clients.html">Partners & Clients</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="contact.html">Contact Us</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="../index.html" data-translate="nav-home">Home</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="about.html" data-translate="nav-about">About Us</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="services.html" data-translate="nav-services">Services</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="solutions.html" data-translate="nav-solutions">Solutions</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="partners&clients.html" data-translate="nav-partners">Partners & Clients</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="contact.html" data-translate="nav-contact">Contact Us</a></li>
 					</ul>
 				  </div>
 		
 				  <div class="col-lg-3 col-md-6 footer-links">
-					<h4>Services</h4>
+					<h4 data-translate="footer-services">Services</h4>
 					<ul>
-					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-consulting.html" target="_blank">ERP Counsultancy</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-web.html" target="_blank">Web Development</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-impl.html" target="_blank">ERP Implementation</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-soft.html" target="_blank">Soft Implementation</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-analytic.html" target="_blank">Business Analytics</a></li>
-					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-support.html" target="_blank">Support</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-consulting.html" target="_blank" data-translate="nav-erp-consultancy">ERP Counsultancy</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-web.html" target="_blank" data-translate="nav-web-development">Web Development</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-impl.html" target="_blank" data-translate="nav-erp-implementation">ERP Implementation</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-soft.html" target="_blank" data-translate="nav-soft-implementation">Soft Implementation</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-analytic.html" target="_blank" data-translate="nav-business-analytics">Business Analytics</a></li>
+					  <li><i class="fa fa-angle-right"></i> <a href="./servicesPages/services-detail-support.html" target="_blank" data-translate="nav-support">Support</a></li>
 					</ul>
 				  </div>
 		
 				  <div class="col-lg-3 col-md-6 footer-contact">
-					<h4>Contact Us</h4>
+					<h4 data-translate="footer-contact">Contact Us</h4>
 					<div class="icon flaticon-placeholder-2 footer__contact__text">&nbsp;  Baku, 1/25 Ahmad Rajabli, Chinar Park, 2-nd Center, 4 floor </div>
 					<div class="icon flaticon-phone-call footer__contact__text"> <a href="tel:+786-875-864-75">&nbsp; +99450 718 10 19</a> </div>
 					<div class="icon flaticon-email-1 footer__contact__text"> <a href="mailto:info@apertech.net">&nbsp;  info@apertech.net</a> </div>
@@ -265,7 +266,7 @@
 			</div>
 		
 			  <div class="copyright">
-				APERTECH Solutions. All Rights Reserved. © 2024
+				<span data-translate="footer-copyright">APERTECH Solutions. All Rights Reserved. © 2024</span>
 			</div>
 		  </footer>
 	
@@ -304,6 +305,7 @@
 <script src="../lib/superfish/superfish.min.js"></script>
 
 <script src="../js/main.js"></script>
+<script src="../js/translation.js"></script>
 
 </body>
 </html>
