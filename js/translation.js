@@ -134,7 +134,7 @@ class TranslationSystem {
                 // Call to action
                 'cta-title-1': 'Biznesiniz üçün hazırlaşırıq',
                 'cta-title-2': 'ERP Həlləri ilə Uğur',
-                'cta-meet-us': 'Bizimlə Görüş',
+                'cta-meet-us': 'Bizimlə Əlaqə Saxla',
                 
                 // Footer
                 'footer-description': 'Biz bütün ölçülü təşkilatlara ən müasir texnoloji həllər təqdim edən dostluq biznes həlləri məsləhətçilik şirkətiyik.',
