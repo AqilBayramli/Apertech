@@ -378,7 +378,7 @@ class TranslationSystem {
                 'contact-phone': 'Telefon',
                 'contact-email': 'E-Poçt',
                 'page-title-support': 'APERTECH | Dəstək',
-                'footer-address': 'Bakı, 1/25 Əhməd Rəcəbli, Çinar Park, 2-ci Mərkəz, 4 mərtəbə',
+                'footer-address': 'Bakı, Əhməd Rəcəbli 1/25, Çinar Park 2-ci Bina, 4-cü mərtəbə',
                 'contact-hesitate-title': 'Bizimlə Əlaqə Saxlamaqdan Çəkinməyin',
                 'contact-how-can-we-help': 'Sizə Necə Kömək Edə Bilərik?',
                 'contact-help-text-1': 'Hər hansı köməyə ehtiyacınız varsa, zəhmət olmasa bizimlə əlaqə saxlamaqdan çəkinməyin.',
