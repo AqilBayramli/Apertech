@@ -257,8 +257,8 @@ class TranslationSystem {
                 'industry-financial-desc': 'Maliyyə sənayesi kapitalın idarə edilməsi, investisiya və bölgüsü ilə bağlı geniş xidmət spektrini əhatə edən qlobal iqtisadiyyatın əsas sütunudur.',
                 'industry-government': 'Dövlət sektorları',
                 'industry-government-desc': 'Dövlət sektorları hüquq mühafizəsi və müdafiədən təhsil, səhiyyə, infrastruktur və sosial xidmətlərə qədər geniş ictimai xidmət spektrini əhatə edir.',
-                'industry-hospitality': 'Qonaqpərvərlik',
-                'industry-hospitality-desc': 'Qonaqpərvərlik sənayesi səyahət, asudə vaxt və yaşayış xidmətləri təmin etməyə yönəlmiş müəssisələri əhatə edən müxtəlif və dinamik sektordur.',
+                'industry-hospitality': 'Otel sektoru',
+                'industry-hospitality-desc': 'Otel sektoru səyahət, asudə vaxt və yaşayış xidmətləri təmin etməyə yönəlmiş müəssisələri əhatə edən müxtəlif və dinamik sektordur.',
                 
                 // Services section
                 'services-title-1': 'Biz peşəkar',

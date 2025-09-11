@@ -665,6 +665,10 @@
     width: 70px;
   }
 
+  #header #header__logo img {
+    margin-bottom: 20px;
+  }
+
 
   #header {
     padding: 25px 0;
@@ -852,6 +856,7 @@
 
   #header #header__logo img {
     max-height: 45px;
+    margin-bottom: 20px;
   }
 
   .page__header__title h2{
